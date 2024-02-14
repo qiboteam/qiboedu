@@ -79,7 +79,7 @@ def plot_input_register_amplitudes(state, average_amp_value=None, title=None, sa
 
     
     if save_as is not None:
-        plt.savefig(f"./figures/amplitudes/x_amps_{save_as}.png", transparent=True, bbox_inches="tight")
+        plt.savefig(f"../figures/amplitudes/x_amps_{save_as}.png", transparent=True, bbox_inches="tight")
     
 
 def plot_probabilities(c, nshots, grover=False):
