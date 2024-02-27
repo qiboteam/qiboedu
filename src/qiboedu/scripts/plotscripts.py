@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from scripts.utils import generate_bitstring_combinations
+from qiboedu.scripts.utils import generate_bitstring_combinations
 
 def visualize_states(counter, counter2=None):
     """Plot state's frequencies."""
