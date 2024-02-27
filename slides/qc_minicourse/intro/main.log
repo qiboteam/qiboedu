@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.6)  26 FEB 2024 09:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.6)  27 FEB 2024 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,22 +1314,22 @@ Library (tcolorbox): 'tcbposter.code.tex' version '4.22'
 )) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1389,7 +1389,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box166
-Package hyperref Info: Link coloring OFF on input line 118.
+Package hyperref Info: Link coloring OFF on input line 119.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1402,68 +1402,68 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count390
 )
-LaTeX Info: Redefining \ref on input line 118.
-LaTeX Info: Redefining \pageref on input line 118.
-LaTeX Info: Redefining \nameref on input line 118.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
 
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 118.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 119.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 118.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 119.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 118.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 119.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 1
-18.
+19.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-118.
+119.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 118.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 118.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 119.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 118.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 118.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 118.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 119.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 118.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 118.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 118.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 119.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 118.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 118.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 119.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 118.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 119.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 118.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 118.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 118.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 118.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 118.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 119.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 118.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 118.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 119.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-18.
+19.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
-18.
+19.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 118.
+ut line 119.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1500,38 +1500,742 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks62
 )
 (./main.nav)
-<figures/qibo.png, id=49, 602.25pt x 602.25pt>
+<figures/qibo.png, id=57, 602.25pt x 602.25pt>
 File: figures/qibo.png Graphic file (type png)
 <use figures/qibo.png>
-Package pdftex.def Info: figures/qibo.png  used on input line 120.
+Package pdftex.def Info: figures/qibo.png  used on input line 121.
 (pdftex.def)             Requested size: 55.30992pt x 55.3029pt.
-<figures/unimi.png, id=51, 602.25pt x 602.25pt>
+<figures/unimi.png, id=59, 602.25pt x 602.25pt>
 File: figures/unimi.png Graphic file (type png)
 <use figures/unimi.png>
-Package pdftex.def Info: figures/unimi.png  used on input line 120.
+Package pdftex.def Info: figures/unimi.png  used on input line 121.
 (pdftex.def)             Requested size: 55.30992pt x 55.3029pt.
-<figures/cern.png, id=52, 813.0375pt x 813.0375pt>
+<figures/cern.png, id=60, 813.0375pt x 813.0375pt>
 File: figures/cern.png Graphic file (type png)
 <use figures/cern.png>
-Package pdftex.def Info: figures/cern.png  used on input line 120.
+Package pdftex.def Info: figures/cern.png  used on input line 121.
 (pdftex.def)             Requested size: 55.30992pt x 55.30566pt.
-<figures/ictp.png, id=53, 813.0375pt x 813.0375pt>
+<figures/ictp.png, id=61, 813.0375pt x 813.0375pt>
 File: figures/ictp.png Graphic file (type png)
 <use figures/ictp.png>
-Package pdftex.def Info: figures/ictp.png  used on input line 120.
+Package pdftex.def Info: figures/ictp.png  used on input line 121.
 (pdftex.def)             Requested size: 55.30992pt x 55.30566pt.
 
-Overfull \vbox (17.00024pt too high) detected at line 120
+Overfull \vbox (17.00024pt too high) detected at line 121
  []
 
 
-Overfull \vbox (10.92494pt too high) detected at line 120
+Overfull \vbox (10.92494pt too high) detected at line 121
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/qibo.png> <./fig
-ures/unimi.png> <./figures/cern.png> <./figures/ictp.png>] [2
+ures/unimi.png> <./figures/cern.png> <./figures/ictp.png>]
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
+ut line 138.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 138
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 138
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
+ut line 138.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+<figures/spins.png, id=75, 1027.84pt x 1027.84pt>
+File: figures/spins.png Graphic file (type png)
+<use figures/spins.png>
+Package pdftex.def Info: figures/spins.png  used on input line 138.
+(pdftex.def)             Requested size: 138.2795pt x 138.26622pt.
+<figures/hilb.png, id=76, 1027.84pt x 1027.84pt>
+File: figures/hilb.png Graphic file (type png)
+<use figures/hilb.png>
+Package pdftex.def Info: figures/hilb.png  used on input line 138.
+(pdftex.def)             Requested size: 138.2795pt x 138.26622pt.
+
+[2
+
+ <./figures/spins.png> <./figures/hilb.png>]
+File: figures/spins.png Graphic file (type png)
+<use figures/spins.png>
+Package pdftex.def Info: figures/spins.png  used on input line 138.
+(pdftex.def)             Requested size: 138.2795pt x 138.26622pt.
+File: figures/hilb.png Graphic file (type png)
+<use figures/hilb.png>
+Package pdftex.def Info: figures/hilb.png  used on input line 138.
+(pdftex.def)             Requested size: 138.2795pt x 138.26622pt.
+ [3
+
+]
+File: figures/spins.png Graphic file (type png)
+<use figures/spins.png>
+Package pdftex.def Info: figures/spins.png  used on input line 138.
+(pdftex.def)             Requested size: 138.2795pt x 138.26622pt.
+File: figures/hilb.png Graphic file (type png)
+<use figures/hilb.png>
+Package pdftex.def Info: figures/hilb.png  used on input line 138.
+(pdftex.def)             Requested size: 138.2795pt x 138.26622pt.
+ [4
+
+]
+<figures/feynmann.jpg, id=96, 113.223pt x 130.3269pt>
+File: figures/feynmann.jpg Graphic file (type jpg)
+<use figures/feynmann.jpg>
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 160.
+(pdftex.def)             Requested size: 122.91823pt x 138.90749pt.
+<figures/qcomp.png, id=97, 2256.43pt x 3011.25pt>
+File: figures/qcomp.png Graphic file (type png)
+<use figures/qcomp.png>
+Package pdftex.def Info: figures/qcomp.png  used on input line 160.
+(pdftex.def)             Requested size: 122.88176pt x 138.8546pt.
+ [5
+
+ <./figures/feynmann.jpg> <./figures/qcomp.png>]
+File: figures/feynmann.jpg Graphic file (type jpg)
+<use figures/feynmann.jpg>
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 160.
+(pdftex.def)             Requested size: 122.91823pt x 138.90749pt.
+File: figures/qcomp.png Graphic file (type png)
+<use figures/qcomp.png>
+Package pdftex.def Info: figures/qcomp.png  used on input line 160.
+(pdftex.def)             Requested size: 122.88176pt x 138.8546pt.
+ [6
+
+]
+File: figures/feynmann.jpg Graphic file (type jpg)
+<use figures/feynmann.jpg>
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 160.
+(pdftex.def)             Requested size: 122.91823pt x 138.90749pt.
+File: figures/qcomp.png Graphic file (type png)
+<use figures/qcomp.png>
+Package pdftex.def Info: figures/qcomp.png  used on input line 160.
+(pdftex.def)             Requested size: 122.88176pt x 138.8546pt.
+ [7
+
+]
+File: figures/feynmann.jpg Graphic file (type jpg)
+<use figures/feynmann.jpg>
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 160.
+(pdftex.def)             Requested size: 122.91823pt x 138.90749pt.
+File: figures/qcomp.png Graphic file (type png)
+<use figures/qcomp.png>
+Package pdftex.def Info: figures/qcomp.png  used on input line 160.
+(pdftex.def)             Requested size: 122.88176pt x 138.8546pt.
+ [8
+
+]
+File: figures/feynmann.jpg Graphic file (type jpg)
+<use figures/feynmann.jpg>
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 160.
+(pdftex.def)             Requested size: 122.91823pt x 138.90749pt.
+File: figures/qcomp.png Graphic file (type png)
+<use figures/qcomp.png>
+Package pdftex.def Info: figures/qcomp.png  used on input line 160.
+(pdftex.def)             Requested size: 122.88176pt x 138.8546pt.
+ [9
+
+]
+File: figures/feynmann.jpg Graphic file (type jpg)
+<use figures/feynmann.jpg>
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 179.
+(pdftex.def)             Requested size: 122.91823pt x 138.90749pt.
+File: figures/qcomp.png Graphic file (type png)
+<use figures/qcomp.png>
+Package pdftex.def Info: figures/qcomp.png  used on input line 179.
+(pdftex.def)             Requested size: 122.88176pt x 138.8546pt.
+ [10
+
+]
+<figures/fugaku.jpeg, id=136, 720.6925pt x 524.96124pt>
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+<figures/sad_fugaku.jpg, id=137, 1284.8pt x 722.7pt>
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [11
+
+ <./figures/fugaku.jpeg> <./figures/sad_fugaku.jpg>]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [12
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [13
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [14
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [15
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [16
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [17
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 147.48999pt x 101.0093pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 204.
+(pdftex.def)             Requested size: 147.48422pt x 101.00087pt.
+ [18
+
+]
+<figures/dices.png, id=180, 803.0pt x 803.0pt>
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.37927pt.
+<figures/tn.png, id=183, 624.3325pt x 625.33624pt>
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18655pt x 88.38615pt.
+<figures/bm.png, id=186, 803.0pt x 812.03375pt>
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.3823pt.
+ [19
+
+ <./figures/dices.png> <./figures/tn.png> <./figures/bm.png>]
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.37927pt.
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18655pt x 88.38615pt.
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.3823pt.
+ [20
+
+]
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.37927pt.
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18655pt x 88.38615pt.
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.3823pt.
+ [21
+
+]
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.37927pt.
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18655pt x 88.38615pt.
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 224.
+(pdftex.def)             Requested size: 86.18604pt x 88.3823pt.
+ [22
+
+]
+<figures/complexity.jpg, id=235, 963.6pt x 810.02625pt>
+File: figures/complexity.jpg Graphic file (type jpg)
+<use figures/complexity.jpg>
+Package pdftex.def Info: figures/complexity.jpg  used on input line 231.
+(pdftex.def)             Requested size: 215.10196pt x 180.81427pt.
+
+
+LaTeX Font Warning: Font shape `U/fontawesometwo/bx/n' undefined
+(Font)              using `U/fontawesometwo/m/n' instead on input line 231.
+
+[23
+
+ <./figures/complexity.jpg>]
+File: figures/complexity.jpg Graphic file (type jpg)
+<use figures/complexity.jpg>
+Package pdftex.def Info: figures/complexity.jpg  used on input line 231.
+(pdftex.def)             Requested size: 215.10196pt x 180.81427pt.
+ [24
+
+] [25
+
+] [26
+
+]
+<figures/qubits.png, id=260, 1276.77pt x 434.62375pt>
+File: figures/qubits.png Graphic file (type png)
+<use figures/qubits.png>
+Package pdftex.def Info: figures/qubits.png  used on input line 256.
+(pdftex.def)             Requested size: 291.91704pt x 113.63615pt.
+ [27
+
+ <./figures/qubits.png>]
+<figures/pulses.png, id=267, 722.7pt x 451.6875pt>
+File: figures/pulses.png Graphic file (type png)
+<use figures/pulses.png>
+Package pdftex.def Info: figures/pulses.png  used on input line 256.
+(pdftex.def)             Requested size: 153.64615pt x 113.63838pt.
+
+[28
+
+ <./figures/pulses.png (PNG copy)>]
+<figures/circuit.png, id=273, 1356.06625pt x 433.62pt>
+File: figures/circuit.png Graphic file (type png)
+<use figures/circuit.png>
+Package pdftex.def Info: figures/circuit.png  used on input line 256.
+(pdftex.def)             Requested size: 276.54695pt x 113.63838pt.
+ [29
+
+ <./figures/circuit.png>]
+<figures/measurement.png, id=280, 2569.6pt x 1606.0pt>
+File: figures/measurement.png Graphic file (type png)
+<use figures/measurement.png>
+Package pdftex.def Info: figures/measurement.png  used on input line 256.
+(pdftex.def)             Requested size: 215.09996pt x 113.63225pt.
+ [30
+
+ <./figures/measurement.png>]
+LaTeX Font Info:    Trying to load font information for U+fontawesomeone on inp
+ut line 280.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
+)
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
+nput line 280.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
+File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
+)
+<figures/baby3.pdf, id=287, 132.45586pt x 65.51476pt>
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[31
+
+ <./figures/baby3.pdf>]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[32
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[33
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[34
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[35
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[36
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[37
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[38
+
+]
+File: figures/baby3.pdf Graphic file (type pdf)
+<use figures/baby3.pdf>
+Package pdftex.def Info: figures/baby3.pdf  used on input line 280.
+(pdftex.def)             Requested size: 184.3758pt x 91.19617pt.
+
+Overfull \vbox (4.25856pt too high) detected at line 280
+ []
+
+[39
+
+]
+\pgf@layerbox@back=\box167
+\pgf@layerboxsaved@back=\box168
+\pgf@layerbox@front=\box169
+\pgf@layerboxsaved@front=\box170
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \vbox (3.74728pt too high) detected at line 372
+ []
+
+[40
+
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \vbox (3.74728pt too high) detected at line 372
+ []
+
+[41
+
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \vbox (3.74728pt too high) detected at line 372
+ []
+
+[42
+
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \vbox (3.74728pt too high) detected at line 372
+ []
+
+[43
+
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \vbox (3.74728pt too high) detected at line 372
+ []
+
+[44
+
+]
+<figures/variational.png, id=403, 432.61626pt x 356.33125pt>
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][] 
+ []
+
+[45
+
+ <./figures/variational.png>]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][] 
+ []
+
+[46
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][] 
+ []
+
+[47
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][] 
+ []
+
+[48
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][] 
+ []
+
+[49
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][][] 
+ []
+
+[50
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][][] 
+ []
+
+[51
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][][] 
+ []
+
+[52
+
+]
+File: figures/variational.png Graphic file (type png)
+<use figures/variational.png>
+Package pdftex.def Info: figures/variational.png  used on input line 399.
+(pdftex.def)             Requested size: 153.64493pt x 126.55013pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 399--399
+ [][][] 
+ []
+
+[53
+
+]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 401.
+ [54
+
+]
+<figures/qibo_ecosystem_webpage.pdf, id=458, 1131.26631pt x 817.13275pt>
+File: figures/qibo_ecosystem_webpage.pdf Graphic file (type pdf)
+<use figures/qibo_ecosystem_webpage.pdf>
+Package pdftex.def Info: figures/qibo_ecosystem_webpage.pdf  used on input line
+ 408.
+(pdftex.def)             Requested size: 307.28987pt x 221.9629pt.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 408.
+
+Overfull \vbox (1.5447pt too high) detected at line 408
+ []
+
+[55
+
+ <./figures/qibo_ecosystem_webpage.pdf>]
+File: figures/qibo_ecosystem_webpage.pdf Graphic file (type pdf)
+<use figures/qibo_ecosystem_webpage.pdf>
+Package pdftex.def Info: figures/qibo_ecosystem_webpage.pdf  used on input line
+ 408.
+(pdftex.def)             Requested size: 307.28987pt x 221.9629pt.
+
+Overfull \vbox (1.5447pt too high) detected at line 408
+ []
+
+[56
 
 ]
 \tf@nav=\write8
@@ -1543,29 +2247,52 @@ ures/unimi.png> <./figures/cern.png> <./figures/ictp.png>] [2
 \tf@snm=\write10
 \openout10 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 410.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 158219D4996E5B6CB4A775AA1CA6F2A0;130.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 36497 strings out of 481239
- 771286 string characters out of 5920378
- 1083950 words of memory out of 5000000
- 50967 multiletter control sequences out of 15000+600000
- 535035 words of font info for 33 fonts, out of 8000000 for 9000
+ 37573 strings out of 481239
+ 793692 string characters out of 5920378
+ 1136568 words of memory out of 5000000
+ 51867 multiletter control sequences out of 15000+600000
+ 548329 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,108p,1827b,854s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (2 pages, 404853 bytes).
+ 71i,13n,108p,1827b,1456s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.e
+nc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.en
+c}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfso0800.pfb>
+Output written on main.pdf (56 pages, 10426368 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 779 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 368 words of extra memory for PDF output out of 10000 (max. 10000000)
 
