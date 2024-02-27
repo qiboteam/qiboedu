@@ -1,0 +1,27 @@
+[project]
+name = "qiboedu"
+version = "0.1.0"
+description = "Collection of material for quantum computing educational activities using Qibo."
+authors = [
+    { name = "qiboteam" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+
+[tool.poetry]
+name = "qiboedu"
+version = "0.1.0"
+description = "Collection of material for quantum computing educational activities using Qibo."
+authors = ["Qiboteam"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+qibo = "^0.2.4"
+qibojit = "^0.1.2"
+jupyterlab = "^4.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
