@@ -3,7 +3,7 @@ name = "qiboedu"
 version = "0.1.0"
 description = "Collection of material for quantum computing educational activities using Qibo."
 authors = [
-    { name = "qibolab" }
+    { name = "qiboteam" }
 ]
 dependencies = []
 readme = "README.md"
@@ -13,7 +13,7 @@ requires-python = ">=3.10,<3.12"
 name = "qiboedu"
 version = "0.1.0"
 description = "Collection of material for quantum computing educational activities using Qibo."
-authors = ["Qibolab"]
+authors = ["Qiboteam"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
