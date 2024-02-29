@@ -14,6 +14,7 @@ name = "qiboedu"
 version = "0.1.0"
 description = "Collection of material for quantum computing educational activities using Qibo."
 authors = ["Qiboteam"]
+packages = [{ include = "qiboedu", from = "src" }]
 readme = "README.md"
 
 [tool.poetry.dependencies]
