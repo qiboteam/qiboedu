@@ -15,9 +15,9 @@ def visualize_states(counter, counter2=None):
        
     for i, state in enumerate(counter):
         if i == 0 and counter2 is not None:
-            ax.bar(state, counter[state], color='purple', alpha=0.5, edgecolor="black", label="Noiseless")
+            ax.bar(state, counter[state], color='#C194D8', edgecolor="black", label="Noiseless")
         else:
-            ax.bar(state, counter[state], color='purple', alpha=0.5, edgecolor="black")
+            ax.bar(state, counter[state], color='#C194D8', edgecolor="black")
             
     if counter2 is not None:
         for i, state in enumerate(counter2):
@@ -39,7 +39,7 @@ def plot_probabilities_from_state(state):
     ax.set_ylabel('Probability')
     
     for i, amp in enumerate(state):
-        ax.bar(bitstring[i], np.abs(amp)**2, color='purple', alpha=0.5, edgecolor="black")
+        ax.bar(bitstring[i], np.abs(amp)**2, color='#C194D8', edgecolor="black")
         
     plt.xticks(rotation=90)
 
@@ -99,7 +99,7 @@ def plot_probabilities(c, nshots, grover=False):
             bit = bitstring[i][1:]
         else:
             bit = bitstring[i]
-        ax.bar(bit, frequencies[p] / nshots, color='purple', alpha=0.5, edgecolor="black")\
+        ax.bar(bit, frequencies[p] / nshots, color='#C194D8', edgecolor="black")\
         
     plt.xticks(rotation=90)
     plt.show()
@@ -118,7 +118,7 @@ def plot_grover_probabilities(c, nshots):
     
     for i, p in enumerate(frequencies):
         bit = bitstring[i][1:]
-        ax.bar(bit, frequencies[p] / nshots, color='purple', alpha=0.5, edgecolor="black")\
+        ax.bar(bit, frequencies[p] / nshots, color='#C194D8', edgecolor="black")\
         
     plt.xticks(rotation=90)
     
