@@ -1,0 +1,131 @@
+\documentclass[8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
+\usepackage[labelfont={color=amethyst,bf}]{caption}
+\setbeamercolor{background canvas}{bg=white}
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{braket}
+\usepackage[scale=2]{ccicons}
+\usepackage{amsfonts} 
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\colorlet{col1}{teal}
+\colorlet{col2}{yellow}
+\colorlet{col3}{green}
+\usepackage{fontawesome}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{enumitem}
+
+\usepackage[]{pseudo}
+
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows,calc,math,angles,quotes}
+\usepackage{blochsphere}
+
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows.meta,
+                bending,
+                intersections,
+                quotes,
+                shapes.geometric}
+
+\tikzset{
+    state/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           minimum height=1em,
+           inner sep=2pt,
+           text centered,
+           },
+}
+
+
+\definecolor{myv}{rgb}{0.36, 0.22, 0.33}
+\definecolor{gio}{rgb}{0.45, 0.31, 0.59}
+\definecolor{light}{rgb}{0.8, 0.8, 1}
+\definecolor{warmblack}{rgb}{0.0, 0.26, 0.26}
+\definecolor{brown(web)}{rgb}{0.65, 0.16, 0.16}
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+\definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+\definecolor{brightube}{rgb}{0.82, 0.62, 0.91}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{amethyst}{rgb}{0.6, 0.33, 0.73}
+
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+
+\usepackage{listings}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codepurple},
+    numberstyle=\tiny\color{codepurple},
+    stringstyle=\color{magenta},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+
+%\usepackage[citecolor = green, linkcolor = blue, bookmarks=true, urlcolor=blue,
+%colorlinks=true, pagebackref=true]{hyperref}
+
+
+%\usepackage{xspace}
+
+\title{The Grover search algorithm}
+\subtitle{Quantum Computing Minicourse}
+\date{9 April 2024}
+\author[Stefano Carrazza and Matteo Robbiati]{Stefano Carrazza and Matteo Robbiati}
+\titlegraphic{
+\begin{tikzpicture}[overlay, remember picture]
+
+\node[at=(current page.south east), anchor=south east] {%
+\includegraphics[width=.18\textwidth]{figures/qibo.png} 
+\includegraphics[width=.18\textwidth]{figures/unimi.png} 
+\includegraphics[width=.18\textwidth]{figures/cern.png}  
+\includegraphics[width=.18\textwidth]{figures/ictp.png}  
+};
+\end{tikzpicture}
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{TOC}
+\begin{itemize}
+\item[1.] Grover statement; 
+\item[2.] proof of the main result;
+\item[3.] geometrical description;
+\item[4.] introduction to the circuit implementation.
+\end{itemize}
+\end{frame}
+
+\end{document}
