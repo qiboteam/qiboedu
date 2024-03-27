@@ -128,7 +128,9 @@ $^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
  \begin{frame}{The Quantum Disruption}
    \begin{figure}
       \only<1>{\includegraphics[height=7cm]{figures/t1.pdf}}
+      \hspace{-0.175cm}
       \only<2>{\includegraphics[height=7cm]{figures/t2.pdf}}
+      \hspace{-0.23cm}
       \only<3>{\includegraphics[height=7cm]{figures/t3.pdf}}
    \end{figure}
  \end{frame}
@@ -214,10 +216,10 @@ $^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
   %\vspace{0.5cm}
   \begin{multicols}{2}
     \begin{figure}
-       \uncover<2,3>{\includegraphics[width=0.45\textwidth]{figures/spins.png}}%
+       \uncover<2,3>{\includegraphics[width=0.4\textwidth]{figures/spins.png}}%
     \end{figure}
     \begin{figure}
-       \uncover<3>{\includegraphics[width=0.45\textwidth]{figures/hilb.png}}%
+       \uncover<3>{\includegraphics[width=0.4\textwidth]{figures/hilb.png}}%
     \end{figure}
 \end{multicols}
 \end{frame}
@@ -237,12 +239,91 @@ $^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
    \includegraphics[width=0.3\textwidth, height=0.55\textheight]{figures/qcomp.png}
 \end{figure}
 
-\small
-\textit{Nature isn't classical, dammit, and if you want to make a simulation of nature,
+\small{ \textit{Nature isn't classical, dammit, and if you want to make a simulation of nature,
 you'd better make it quantum mechanical, and by golly it's a wonderful problem,
-because it doesn't look so easy.}
+because it doesn't look so easy.} }
 
 \href{https://link.springer.com/article/10.1007/BF02650179}{\faBook\,\, Richard Feynman, 1982, Simulating Physics with Computers}
+\end{frame}
+
+
+\begin{frame}{Can we represent a state with a classical computer?}
+\pause
+Let's suppose we want to represent a system of \textbf{qubits} ($\uparrow, \downarrow$).
+\pause
+\small
+\begin{itemize}[noitemsep]
+\item[1.] Each \texttt{float 64} requires 8 bytes of memory to be stored;
+\pause
+\item[2.] each \texttt{complex 128} requires 16 bytes of memory;
+\pause
+\item[3.] let's take a nice 32Gb of RAM: it can store up to $2$ billions of \texttt{complex 128}.
+\pause
+\item[4.] a $30$ qubits state requires $\sim 1$ billion of complex numbers;
+\pause
+\item[5.] a $31$ qubits state cannot be represented by my PC;
+\pause
+\item[6.] no problem. Let's get serious: \texttt{Fugaku}!
+\end{itemize}
+
+\begin{figure}
+   \includegraphics[width=0.42\textwidth, height=0.4\textheight]{figures/fugaku.jpeg}%
+   $\,\,$
+   \pause
+   \includegraphics[width=0.42\textwidth, height=0.4\textheight]{figures/sad_fugaku.jpg}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Some smart classical strategies}
+   \begin{itemize}[noitemsep]
+      \item<2,3,4>[1.] Variational Monte Carlo (VMC): given a wave function $\Psi(\bm{x}|\bm{\theta})$ and a target $H$, MC methods are used to minimize:
+      $$ \frac{\int \text{d}\bm{x}\, \Psi^*(\bm{x}|\bm{\theta})\, H \,
+      \Psi(\bm{x}|\bm{\theta})}{\int \text{d}\bm{x}\, |\Psi(\bm{x}|\bm{\theta})|^2}\geq E_0; $$
+      \item<3,4>[2.] Tensor Networks (TNs): contraction of complex systems into simpler structures;
+      \item<4>[3.] Neural Network Quantum States: use complex ANNs to represent the state.
+   \end{itemize}
+   \begin{multicols}{3}
+   \begin{figure}
+      \uncover<2,3,4>{\includegraphics[width=0.7\linewidth, height=0.35\textheight]{figures/dices.png}
+      \caption*{\href{https://arxiv.org/abs/1508.02989}{\faBook\,\,arXiv:1508.02989}}}%
+      \uncover<3,4>{\includegraphics[width=0.7\linewidth, height=0.35\textheight]{figures/tn.png}
+      \caption*{\href{https://arxiv.org/abs/1708.00006}{\faBook\,\,arXiv:1708.00006}}}%
+      \uncover<4>{\includegraphics[width=0.7\linewidth, height=0.35\textheight]{figures/bm.png}
+      \caption*{\href{https://arxiv.org/abs/1606.02318}{\faBook\,\,arXiv:1606.02318}}}
+   \end{figure}
+   \end{multicols}
+\end{frame}
+
+\begin{frame}{Is this enough? \hfill \href{https://arxiv.org/abs/2103.10293}{\faBook\,\,arXiv:2103.10293}}
+\pause
+\begin{figure}
+   \includegraphics[width=0.6\textwidth]{figures/complexity.jpg}
+\end{figure}
+\end{frame}
+
+\section{Quantum computing}
+
+\begin{frame}{Qubits}
+        \begin{itemize}[noitemsep]
+           \item<2,3,4,5>[1.] classical bits are replaced by \textbf{qubits}
+           $ \ket{\psi} = \alpha\ket{0}+\beta\ket{1}$.
+           \item<3,4,5>[2.] we can manipulate the qubit state applying \textbf{gates}: $\ket{\psi'}=\mathcal{U}(\bm{\theta})\ket{\psi}.$
+
+           Typically we use 1-qubit and 2-qubits gates!
+         %   $$ H \ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}} \qquad \text{with}\qquad  H =
+         %   \begin{pmatrix}
+         %   1 & 1 \\ 1 & -1
+         %   \end{pmatrix}.
+         %   $$
+           \item<4,5>[3.] combine together gates to build \textbf{quantum circuits};
+           \item<5>[4.] to access the information we need to measure the system.
+        \end{itemize}
+        \begin{figure}
+            \only<2>{\includegraphics[width=0.8\linewidth, height=0.45\textheight]{figures/qubits.png}}%
+            \only<3>{\includegraphics[width=0.45  \linewidth, height=0.45\textheight]{figures/pulses.png}}%
+            \only<4>{\includegraphics[width=0.9\linewidth, height=0.45\textheight]{figures/circuit.png}}
+            \only<5>{\includegraphics[width=0.5\linewidth, height=0.45\textheight]{figures/measurement.png}}
+        \end{figure}
 \end{frame}
 
 \begin{frame}[fragile]{What is a qubit?}
@@ -277,84 +358,6 @@ because it doesn't look so easy.}
  \textit{i.e.} a {\color{blue}superposition state vector} with \textbf{$2^n$ complex numbers}.
 
  \end{frame}
-
-\begin{frame}{Can we represent a state with a classical computer?}
-\pause
-Let's suppose we want to represent a system of \textbf{qubits} ($\uparrow, \downarrow$).
-\pause
-\begin{itemize}[noitemsep]
-\item[1.] Each \texttt{float 64} requires 8 bytes of memory to be stored;
-\pause
-\item[2.] each \texttt{complex 128} requires 16 bytes of memory;
-\pause
-\item[3.] let's take a nice 32Gb of RAM: it can store up to $2$ billions of \texttt{complex 128}.
-\pause
-\item[4.] a $30$ qubits state requires $\sim 1$ billion of complex numbers;
-\pause
-\item[5.] a $31$ qubits state cannot be represented by my PC;
-\pause
-\item[6.] no problem. Let's get serious: \texttt{Fugaku}!
-\end{itemize}
-
-\begin{figure}
-   \includegraphics[width=0.48\textwidth, height=0.4\textheight]{figures/fugaku.jpeg}%
-   $\,\,$
-   \pause
-   \includegraphics[width=0.48\textwidth, height=0.4\textheight]{figures/sad_fugaku.jpg}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Some smart strategies}
-   \begin{itemize}[noitemsep]
-      \item<2,3,4>[1.] Variational Monte Carlo (VMC): given a wave function $\Psi(\bm{x}|\bm{\theta})$ and a target $H$, MC methods are used to minimize:
-      $$ \frac{\int \text{d}\bm{x}\, \Psi^*(\bm{x}|\bm{\theta})\, H \,
-      \Psi(\bm{x}|\bm{\theta})}{\int \text{d}\bm{x}\, |\Psi(\bm{x}|\bm{\theta})|^2}\geq E_0; $$
-      \item<3,4>[2.] Tensor Networks (TNs): contraction of complex systems into simpler structures;
-      \item<4>[3.] Neural Network Quantum States: use complex ANNs to represent the state.
-   \end{itemize}
-   \begin{multicols}{3}
-   \begin{figure}
-      \uncover<2,3,4>{\includegraphics[width=0.7\linewidth, height=0.35\textheight]{figures/dices.png}
-      \caption*{\href{https://arxiv.org/abs/1508.02989}{\faBook\,\,arXiv:1508.02989}}}%
-      \uncover<3,4>{\includegraphics[width=0.7\linewidth, height=0.35\textheight]{figures/tn.png}
-      \caption*{\href{https://arxiv.org/abs/1708.00006}{\faBook\,\,arXiv:1708.00006}}}%
-      \uncover<4>{\includegraphics[width=0.7\linewidth, height=0.35\textheight]{figures/bm.png}
-      \caption*{\href{https://arxiv.org/abs/1606.02318}{\faBook\,\,arXiv:1606.02318}}}
-   \end{figure}
-   \end{multicols}
-\end{frame}
-
-\begin{frame}{Is this enough? \hfill \href{https://arxiv.org/abs/2103.10293}{\faBook\,\,arXiv:2103.10293}}
-\pause
-\begin{figure}
-   \includegraphics[width=0.6\textwidth]{figures/complexity.jpg}
-\end{figure}
-\end{frame}
-
-\section{A snapshot of quantum computing}
-
-\begin{frame}{Qubits}
-        \begin{itemize}[noitemsep]
-           \item<2,3,4,5>[1.] classical bits are replaced by \textbf{qubits}
-           $ \ket{\psi} = \alpha\ket{0}+\beta\ket{1}$.
-           \item<3,4,5>[2.] we can manipulate the qubit state applying \textbf{gates}: $\ket{\psi'}=\mathcal{U}(\bm{\theta})\ket{\psi}.$
-
-           Typically we use 1-qubit and 2-qubits gates!
-         %   $$ H \ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}} \qquad \text{with}\qquad  H =
-         %   \begin{pmatrix}
-         %   1 & 1 \\ 1 & -1
-         %   \end{pmatrix}.
-         %   $$
-           \item<4,5>[3.] combine together gates to build \textbf{quantum circuits};
-           \item<5>[4.] to access the information we need to measure the system.
-        \end{itemize}
-        \begin{figure}
-            \only<2>{\includegraphics[width=0.95\linewidth, height=0.45\textheight]{figures/qubits.png}}%
-            \only<3>{\includegraphics[width=0.5\linewidth, height=0.45\textheight]{figures/pulses.png}}%
-            \only<4>{\includegraphics[width=0.9\linewidth, height=0.45\textheight]{figures/circuit.png}}
-            \only<5>{\includegraphics[width=0.5\linewidth, height=0.45\textheight]{figures/measurement.png}}
-        \end{figure}
-\end{frame}
 
 
 \begin{frame}{Quantum circuits}
@@ -644,8 +647,7 @@ makes sense when tackling a many body problem!
 Using Variational Quantum Circuits we define a Variational Quantum Computer!
 \pause
 \begin{multicols}{2}
-\texttt{\\}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item<7,8,9>[1.] we want a quantum circuit $\mathcal{U}(\bm{\theta})$ to approximates some law $V$;
 \item<8,9>[2.] executing $\mathcal{U}(\bm{\theta})$ we use a variational quantum state
 to reach the solution;
@@ -654,7 +656,7 @@ represent $V$ with precision $\delta$ is $\mathcal{O}(\log^c \delta^{-1})$, wher
 $c<4$.
 \end{itemize}
 \begin{figure}
-    \uncover<6,7,8,9>{\includegraphics[width=0.5\textwidth]{figures/variational.png}}
+    \uncover<6,7,8,9>{\includegraphics[width=0.4\textwidth]{figures/variational.png}}
 \end{figure}
 \end{multicols}
 \end{frame}
@@ -781,7 +783,7 @@ $c<4$.
    \begin{enumerate}
      \item[1.] Fully open-source and community driven.
      \item[2.] Modular layout design with possibility of adding:
-     \begin{itemize}
+     \begin{itemize}[noitemsep]
        \item[-] new backends for simulation,
        \item[-] new platforms for hardware control,
        \item[-] new drivers for control electronics.
