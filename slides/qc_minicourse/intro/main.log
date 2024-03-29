@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.22)  27 MAR 2024 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.22)  29 MAR 2024 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1650,22 +1650,22 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 File: figures/qibo.png Graphic file (type png)
 <use figures/qibo.png>
 Package pdftex.def Info: figures/qibo.png  used on input line 124.
-(pdftex.def)             Requested size: 71.69803pt x 71.69711pt.
+(pdftex.def)             Requested size: 55.76715pt x 55.76239pt.
 <figures/unimi.png, id=87, 602.25pt x 602.25pt>
 File: figures/unimi.png Graphic file (type png)
 <use figures/unimi.png>
 Package pdftex.def Info: figures/unimi.png  used on input line 124.
-(pdftex.def)             Requested size: 71.69803pt x 71.69711pt.
+(pdftex.def)             Requested size: 55.76715pt x 55.76239pt.
 <figures/cern.png, id=88, 813.0375pt x 813.0375pt>
 File: figures/cern.png Graphic file (type png)
 <use figures/cern.png>
 Package pdftex.def Info: figures/cern.png  used on input line 124.
-(pdftex.def)             Requested size: 71.69803pt x 71.69391pt.
+(pdftex.def)             Requested size: 55.76715pt x 55.76468pt.
 <figures/ictp.png, id=89, 813.0375pt x 813.0375pt>
 File: figures/ictp.png Graphic file (type png)
 <use figures/ictp.png>
 Package pdftex.def Info: figures/ictp.png  used on input line 124.
-(pdftex.def)             Requested size: 71.69803pt x 71.69391pt.
+(pdftex.def)             Requested size: 55.76715pt x 55.76468pt.
 
 Overfull \vbox (20.00003pt too high) detected at line 124
  []
@@ -1686,10 +1686,10 @@ ion <1.6>, but at most version <1.5> allowed
 <figures/t1.pdf, id=112, 796.4211pt x 448.07399pt>
 File: figures/t1.pdf Graphic file (type pdf)
 <use figures/t1.pdf>
-Package pdftex.def Info: figures/t1.pdf  used on input line 134.
+Package pdftex.def Info: figures/t1.pdf  used on input line 136.
 (pdftex.def)             Requested size: 354.01132pt x 199.16928pt.
 
-Overfull \vbox (7.477pt too high) detected at line 134
+Overfull \vbox (7.477pt too high) detected at line 136
  []
 
 [3
@@ -1701,10 +1701,10 @@ ion <1.6>, but at most version <1.5> allowed
 <figures/t2.pdf, id=135, 796.4211pt x 448.07399pt>
 File: figures/t2.pdf Graphic file (type pdf)
 <use figures/t2.pdf>
-Package pdftex.def Info: figures/t2.pdf  used on input line 134.
+Package pdftex.def Info: figures/t2.pdf  used on input line 136.
 (pdftex.def)             Requested size: 354.01132pt x 199.16928pt.
 
-Overfull \vbox (7.477pt too high) detected at line 134
+Overfull \vbox (7.477pt too high) detected at line 136
  []
 
 [4
@@ -1716,10 +1716,10 @@ ion <1.6>, but at most version <1.5> allowed
 <figures/t3.pdf, id=158, 796.4211pt x 448.07399pt>
 File: figures/t3.pdf Graphic file (type pdf)
 <use figures/t3.pdf>
-Package pdftex.def Info: figures/t3.pdf  used on input line 134.
+Package pdftex.def Info: figures/t3.pdf  used on input line 136.
 (pdftex.def)             Requested size: 354.01132pt x 199.16928pt.
 
-Overfull \vbox (7.477pt too high) detected at line 134
+Overfull \vbox (7.477pt too high) detected at line 136
  []
 
 [5
@@ -1728,7 +1728,7 @@ Overfull \vbox (7.477pt too high) detected at line 134
 <figures/timeline.png, id=186, 844.8363pt x 289.08pt>
 File: figures/timeline.png Graphic file (type png)
 <use figures/timeline.png>
-Package pdftex.def Info: figures/timeline.png  used on input line 151.
+Package pdftex.def Info: figures/timeline.png  used on input line 153.
 (pdftex.def)             Requested size: 374.17844pt x 128.0374pt.
  [6
 
@@ -1736,7 +1736,7 @@ Package pdftex.def Info: figures/timeline.png  used on input line 151.
 <figures/rfqt.png, id=195, 514.92375pt x 240.9pt>
 File: figures/rfqt.png Graphic file (type png)
 <use figures/rfqt.png>
-Package pdftex.def Info: figures/rfqt.png  used on input line 164.
+Package pdftex.def Info: figures/rfqt.png  used on input line 166.
 (pdftex.def)             Requested size: 182.44957pt x 85.35826pt.
  [7
 
@@ -1744,12 +1744,12 @@ Package pdftex.def Info: figures/rfqt.png  used on input line 164.
 <figures/q3.png, id=203, 525.965pt x 427.5975pt>
 File: figures/q3.png Graphic file (type png)
 <use figures/q3.png>
-Package pdftex.def Info: figures/q3.png  used on input line 182.
+Package pdftex.def Info: figures/q3.png  used on input line 184.
 (pdftex.def)             Requested size: 111.98878pt x 91.04872pt.
 <figures/q2.png, id=204, 385.44pt x 253.6677pt>
 File: figures/q2.png Graphic file (type png)
 <use figures/q2.png>
-Package pdftex.def Info: figures/q2.png  used on input line 182.
+Package pdftex.def Info: figures/q2.png  used on input line 184.
 (pdftex.def)             Requested size: 129.69516pt x 85.35826pt.
 
 [8
@@ -1765,7 +1765,7 @@ Package pdftex.def Info: figures/20170311_01_DESKTOP.png  used on input line 4.
 
 (pdftex.def)             Requested size: 339.07663pt x 199.16928pt.
 )
-Overfull \vbox (7.477pt too high) detected at line 190
+Overfull \vbox (7.477pt too high) detected at line 192
  []
 
 [9
@@ -1790,7 +1790,7 @@ Overfull \hbox (7.75409pt too wide) in paragraph at lines 10--11
  []
 
 )
-Overfull \vbox (3.477pt too high) detected at line 204
+Overfull \vbox (3.477pt too high) detected at line 206
  []
 
 [10
@@ -1799,7 +1799,7 @@ Overfull \vbox (3.477pt too high) detected at line 204
 
 ]
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
-ut line 223.
+ut line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
@@ -1807,15 +1807,15 @@ File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 <figures/spins.png, id=235, 1027.84pt x 1027.84pt>
 File: figures/spins.png Graphic file (type png)
 <use figures/spins.png>
-Package pdftex.def Info: figures/spins.png  used on input line 223.
-(pdftex.def)             Requested size: 179.25114pt x 179.24734pt.
+Package pdftex.def Info: figures/spins.png  used on input line 225.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
 <figures/hilb.png, id=236, 1027.84pt x 1027.84pt>
 File: figures/hilb.png Graphic file (type png)
 <use figures/hilb.png>
-Package pdftex.def Info: figures/hilb.png  used on input line 223.
-(pdftex.def)             Requested size: 179.25114pt x 179.24734pt.
+Package pdftex.def Info: figures/hilb.png  used on input line 225.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
 
-Overfull \vbox (36.45485pt too high) detected at line 223
+Overfull \vbox (8.53674pt too high) detected at line 225
  []
 
 [12
@@ -1823,14 +1823,14 @@ Overfull \vbox (36.45485pt too high) detected at line 223
  <./figures/spins.png> <./figures/hilb.png>]
 File: figures/spins.png Graphic file (type png)
 <use figures/spins.png>
-Package pdftex.def Info: figures/spins.png  used on input line 223.
-(pdftex.def)             Requested size: 179.25114pt x 179.24734pt.
+Package pdftex.def Info: figures/spins.png  used on input line 225.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
 File: figures/hilb.png Graphic file (type png)
 <use figures/hilb.png>
-Package pdftex.def Info: figures/hilb.png  used on input line 223.
-(pdftex.def)             Requested size: 179.25114pt x 179.24734pt.
+Package pdftex.def Info: figures/hilb.png  used on input line 225.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
 
-Overfull \vbox (36.45485pt too high) detected at line 223
+Overfull \vbox (8.53674pt too high) detected at line 225
  []
 
 [13
@@ -1838,14 +1838,14 @@ Overfull \vbox (36.45485pt too high) detected at line 223
 ]
 File: figures/spins.png Graphic file (type png)
 <use figures/spins.png>
-Package pdftex.def Info: figures/spins.png  used on input line 223.
-(pdftex.def)             Requested size: 179.25114pt x 179.24734pt.
+Package pdftex.def Info: figures/spins.png  used on input line 225.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
 File: figures/hilb.png Graphic file (type png)
 <use figures/hilb.png>
-Package pdftex.def Info: figures/hilb.png  used on input line 223.
-(pdftex.def)             Requested size: 179.25114pt x 179.24734pt.
+Package pdftex.def Info: figures/hilb.png  used on input line 225.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
 
-Overfull \vbox (36.45485pt too high) detected at line 223
+Overfull \vbox (8.53674pt too high) detected at line 225
  []
 
 [14
@@ -1854,15 +1854,15 @@ Overfull \vbox (36.45485pt too high) detected at line 223
 <figures/feynmann.jpg, id=257, 113.223pt x 130.3269pt>
 File: figures/feynmann.jpg Graphic file (type jpg)
 <use figures/feynmann.jpg>
-Package pdftex.def Info: figures/feynmann.jpg  used on input line 246.
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 247.
 (pdftex.def)             Requested size: 119.50615pt x 127.31976pt.
 <figures/qcomp.png, id=258, 2256.43pt x 3011.25pt>
 File: figures/qcomp.png Graphic file (type png)
 <use figures/qcomp.png>
-Package pdftex.def Info: figures/qcomp.png  used on input line 246.
+Package pdftex.def Info: figures/qcomp.png  used on input line 247.
 (pdftex.def)             Requested size: 119.47316pt x 127.27573pt.
 
-Overfull \vbox (7.07166pt too high) detected at line 246
+Overfull \vbox (7.07166pt too high) detected at line 247
  []
 
 [15
@@ -1870,14 +1870,14 @@ Overfull \vbox (7.07166pt too high) detected at line 246
  <./figures/feynmann.jpg> <./figures/qcomp.png>]
 File: figures/feynmann.jpg Graphic file (type jpg)
 <use figures/feynmann.jpg>
-Package pdftex.def Info: figures/feynmann.jpg  used on input line 246.
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 247.
 (pdftex.def)             Requested size: 119.50615pt x 127.31976pt.
 File: figures/qcomp.png Graphic file (type png)
 <use figures/qcomp.png>
-Package pdftex.def Info: figures/qcomp.png  used on input line 246.
+Package pdftex.def Info: figures/qcomp.png  used on input line 247.
 (pdftex.def)             Requested size: 119.47316pt x 127.27573pt.
 
-Overfull \vbox (20.87158pt too high) detected at line 246
+Overfull \vbox (20.87158pt too high) detected at line 247
  []
 
 [16
@@ -1885,14 +1885,14 @@ Overfull \vbox (20.87158pt too high) detected at line 246
 ]
 File: figures/feynmann.jpg Graphic file (type jpg)
 <use figures/feynmann.jpg>
-Package pdftex.def Info: figures/feynmann.jpg  used on input line 246.
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 247.
 (pdftex.def)             Requested size: 119.50615pt x 127.31976pt.
 File: figures/qcomp.png Graphic file (type png)
 <use figures/qcomp.png>
-Package pdftex.def Info: figures/qcomp.png  used on input line 246.
+Package pdftex.def Info: figures/qcomp.png  used on input line 247.
 (pdftex.def)             Requested size: 119.47316pt x 127.27573pt.
 
-Overfull \vbox (20.87158pt too high) detected at line 246
+Overfull \vbox (20.87158pt too high) detected at line 247
  []
 
 [17
@@ -1900,14 +1900,14 @@ Overfull \vbox (20.87158pt too high) detected at line 246
 ]
 File: figures/feynmann.jpg Graphic file (type jpg)
 <use figures/feynmann.jpg>
-Package pdftex.def Info: figures/feynmann.jpg  used on input line 246.
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 247.
 (pdftex.def)             Requested size: 119.50615pt x 127.31976pt.
 File: figures/qcomp.png Graphic file (type png)
 <use figures/qcomp.png>
-Package pdftex.def Info: figures/qcomp.png  used on input line 246.
+Package pdftex.def Info: figures/qcomp.png  used on input line 247.
 (pdftex.def)             Requested size: 119.47316pt x 127.27573pt.
 
-Overfull \vbox (20.87158pt too high) detected at line 246
+Overfull \vbox (20.87158pt too high) detected at line 247
  []
 
 [18
@@ -1915,14 +1915,14 @@ Overfull \vbox (20.87158pt too high) detected at line 246
 ]
 File: figures/feynmann.jpg Graphic file (type jpg)
 <use figures/feynmann.jpg>
-Package pdftex.def Info: figures/feynmann.jpg  used on input line 246.
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 247.
 (pdftex.def)             Requested size: 119.50615pt x 127.31976pt.
 File: figures/qcomp.png Graphic file (type png)
 <use figures/qcomp.png>
-Package pdftex.def Info: figures/qcomp.png  used on input line 246.
+Package pdftex.def Info: figures/qcomp.png  used on input line 247.
 (pdftex.def)             Requested size: 119.47316pt x 127.27573pt.
 
-Overfull \vbox (20.87158pt too high) detected at line 246
+Overfull \vbox (20.87158pt too high) detected at line 247
  []
 
 [19
@@ -1930,58 +1930,91 @@ Overfull \vbox (20.87158pt too high) detected at line 246
 ]
 File: figures/feynmann.jpg Graphic file (type jpg)
 <use figures/feynmann.jpg>
-Package pdftex.def Info: figures/feynmann.jpg  used on input line 246.
+Package pdftex.def Info: figures/feynmann.jpg  used on input line 247.
 (pdftex.def)             Requested size: 119.50615pt x 127.31976pt.
 File: figures/qcomp.png Graphic file (type png)
 <use figures/qcomp.png>
-Package pdftex.def Info: figures/qcomp.png  used on input line 246.
+Package pdftex.def Info: figures/qcomp.png  used on input line 247.
 (pdftex.def)             Requested size: 119.47316pt x 127.27573pt.
 
-Overfull \vbox (20.87158pt too high) detected at line 246
+Overfull \vbox (20.87158pt too high) detected at line 247
  []
 
 [20
 
 ]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [21
-
-] (./main.vrb) [22
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [23
-
-]
-<figures/fugaku.jpeg, id=315, 720.6925pt x 524.96124pt>
+<figures/fugaku.jpeg, id=297, 720.6925pt x 524.96124pt>
 File: figures/fugaku.jpeg Graphic file (type jpg)
 <use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
-<figures/sad_fugaku.jpg, id=316, 1284.8pt x 722.7pt>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
+<figures/sad_fugaku.jpg, id=298, 1284.8pt x 722.7pt>
 File: figures/sad_fugaku.jpg Graphic file (type jpg)
 <use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (5.44777pt too high) detected at line 275
  []
 
-[24
+[21
 
  <./figures/fugaku.jpeg> <./figures/sad_fugaku.jpg>]
 File: figures/fugaku.jpeg Graphic file (type jpg)
 <use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
 File: figures/sad_fugaku.jpg Graphic file (type jpg)
 <use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (5.44777pt too high) detected at line 275
+ []
+
+[22
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
+
+Overfull \vbox (5.44777pt too high) detected at line 275
+ []
+
+[23
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
+
+Overfull \vbox (5.44777pt too high) detected at line 275
+ []
+
+[24
+
+]
+File: figures/fugaku.jpeg Graphic file (type jpg)
+<use figures/fugaku.jpeg>
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
+File: figures/sad_fugaku.jpg Graphic file (type jpg)
+<use figures/sad_fugaku.jpg>
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
+
+Overfull \vbox (5.44777pt too high) detected at line 275
  []
 
 [25
@@ -1989,14 +2022,14 @@ Overfull \vbox (10.71996pt too high) detected at line 305
 ]
 File: figures/fugaku.jpeg Graphic file (type jpg)
 <use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
 File: figures/sad_fugaku.jpg Graphic file (type jpg)
 <use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (5.44777pt too high) detected at line 275
  []
 
 [26
@@ -2004,14 +2037,14 @@ Overfull \vbox (10.71996pt too high) detected at line 305
 ]
 File: figures/fugaku.jpeg Graphic file (type jpg)
 <use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
 File: figures/sad_fugaku.jpg Graphic file (type jpg)
 <use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (5.44777pt too high) detected at line 275
  []
 
 [27
@@ -2019,14 +2052,14 @@ Overfull \vbox (10.71996pt too high) detected at line 305
 ]
 File: figures/fugaku.jpeg Graphic file (type jpg)
 <use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
 File: figures/sad_fugaku.jpg Graphic file (type jpg)
 <use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (5.44777pt too high) detected at line 275
  []
 
 [28
@@ -2034,218 +2067,185 @@ Overfull \vbox (10.71996pt too high) detected at line 305
 ]
 File: figures/fugaku.jpeg Graphic file (type jpg)
 <use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
+Package pdftex.def Info: figures/fugaku.jpeg  used on input line 275.
+(pdftex.def)             Requested size: 167.29535pt x 92.59052pt.
 File: figures/sad_fugaku.jpg Graphic file (type jpg)
 <use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 275.
+(pdftex.def)             Requested size: 167.28471pt x 92.58688pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (5.44777pt too high) detected at line 275
  []
 
 [29
 
 ]
-File: figures/fugaku.jpeg Graphic file (type jpg)
-<use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
-File: figures/sad_fugaku.jpg Graphic file (type jpg)
-<use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+<figures/dices.png, id=347, 803.0pt x 803.0pt>
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 295.
+(pdftex.def)             Requested size: 88.269pt x 81.01537pt.
+<figures/tn.png, id=350, 624.3325pt x 625.33624pt>
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 295.
+(pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
+<figures/bm.png, id=353, 803.0pt x 812.03375pt>
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 295.
+(pdftex.def)             Requested size: 88.269pt x 81.00987pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (15.40001pt too high) detected at line 295
  []
 
 [30
 
-]
-File: figures/fugaku.jpeg Graphic file (type jpg)
-<use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
-File: figures/sad_fugaku.jpg Graphic file (type jpg)
-<use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+ <./figures/dices.png> <./figures/tn.png> <./figures/bm.png>]
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 295.
+(pdftex.def)             Requested size: 88.269pt x 81.01537pt.
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 295.
+(pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 295.
+(pdftex.def)             Requested size: 88.269pt x 81.00987pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (15.40001pt too high) detected at line 295
  []
 
 [31
 
 ]
-File: figures/fugaku.jpeg Graphic file (type jpg)
-<use figures/fugaku.jpeg>
-Package pdftex.def Info: figures/fugaku.jpeg  used on input line 305.
-(pdftex.def)             Requested size: 191.19154pt x 92.59052pt.
-File: figures/sad_fugaku.jpg Graphic file (type jpg)
-<use figures/sad_fugaku.jpg>
-Package pdftex.def Info: figures/sad_fugaku.jpg  used on input line 305.
-(pdftex.def)             Requested size: 191.18254pt x 92.58688pt.
+File: figures/dices.png Graphic file (type png)
+<use figures/dices.png>
+Package pdftex.def Info: figures/dices.png  used on input line 295.
+(pdftex.def)             Requested size: 88.269pt x 81.01537pt.
+File: figures/tn.png Graphic file (type png)
+<use figures/tn.png>
+Package pdftex.def Info: figures/tn.png  used on input line 295.
+(pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
+File: figures/bm.png Graphic file (type png)
+<use figures/bm.png>
+Package pdftex.def Info: figures/bm.png  used on input line 295.
+(pdftex.def)             Requested size: 88.269pt x 81.00987pt.
 
-Overfull \vbox (10.71996pt too high) detected at line 305
+Overfull \vbox (15.40001pt too high) detected at line 295
  []
 
 [32
 
 ]
-<figures/dices.png, id=366, 803.0pt x 803.0pt>
 File: figures/dices.png Graphic file (type png)
 <use figures/dices.png>
-Package pdftex.def Info: figures/dices.png  used on input line 325.
+Package pdftex.def Info: figures/dices.png  used on input line 295.
 (pdftex.def)             Requested size: 88.269pt x 81.01537pt.
-<figures/tn.png, id=369, 624.3325pt x 625.33624pt>
 File: figures/tn.png Graphic file (type png)
 <use figures/tn.png>
-Package pdftex.def Info: figures/tn.png  used on input line 325.
+Package pdftex.def Info: figures/tn.png  used on input line 295.
 (pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
-<figures/bm.png, id=372, 803.0pt x 812.03375pt>
 File: figures/bm.png Graphic file (type png)
 <use figures/bm.png>
-Package pdftex.def Info: figures/bm.png  used on input line 325.
+Package pdftex.def Info: figures/bm.png  used on input line 295.
 (pdftex.def)             Requested size: 88.269pt x 81.00987pt.
 
-Overfull \vbox (15.40001pt too high) detected at line 325
+Overfull \vbox (15.40001pt too high) detected at line 295
  []
 
 [33
 
- <./figures/dices.png> <./figures/tn.png> <./figures/bm.png>]
-File: figures/dices.png Graphic file (type png)
-<use figures/dices.png>
-Package pdftex.def Info: figures/dices.png  used on input line 325.
-(pdftex.def)             Requested size: 88.269pt x 81.01537pt.
-File: figures/tn.png Graphic file (type png)
-<use figures/tn.png>
-Package pdftex.def Info: figures/tn.png  used on input line 325.
-(pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
-File: figures/bm.png Graphic file (type png)
-<use figures/bm.png>
-Package pdftex.def Info: figures/bm.png  used on input line 325.
-(pdftex.def)             Requested size: 88.269pt x 81.00987pt.
-
-Overfull \vbox (15.40001pt too high) detected at line 325
- []
-
-[34
-
 ]
-File: figures/dices.png Graphic file (type png)
-<use figures/dices.png>
-Package pdftex.def Info: figures/dices.png  used on input line 325.
-(pdftex.def)             Requested size: 88.269pt x 81.01537pt.
-File: figures/tn.png Graphic file (type png)
-<use figures/tn.png>
-Package pdftex.def Info: figures/tn.png  used on input line 325.
-(pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
-File: figures/bm.png Graphic file (type png)
-<use figures/bm.png>
-Package pdftex.def Info: figures/bm.png  used on input line 325.
-(pdftex.def)             Requested size: 88.269pt x 81.00987pt.
-
-Overfull \vbox (15.40001pt too high) detected at line 325
- []
-
-[35
-
-]
-File: figures/dices.png Graphic file (type png)
-<use figures/dices.png>
-Package pdftex.def Info: figures/dices.png  used on input line 325.
-(pdftex.def)             Requested size: 88.269pt x 81.01537pt.
-File: figures/tn.png Graphic file (type png)
-<use figures/tn.png>
-Package pdftex.def Info: figures/tn.png  used on input line 325.
-(pdftex.def)             Requested size: 88.27286pt x 81.01985pt.
-File: figures/bm.png Graphic file (type png)
-<use figures/bm.png>
-Package pdftex.def Info: figures/bm.png  used on input line 325.
-(pdftex.def)             Requested size: 88.269pt x 81.00987pt.
-
-Overfull \vbox (15.40001pt too high) detected at line 325
- []
-
-[36
-
-]
-<figures/complexity.jpg, id=417, 963.6pt x 810.02625pt>
+<figures/complexity.jpg, id=402, 963.6pt x 810.02625pt>
 File: figures/complexity.jpg Graphic file (type jpg)
 <use figures/complexity.jpg>
-Package pdftex.def Info: figures/complexity.jpg  used on input line 332.
+Package pdftex.def Info: figures/complexity.jpg  used on input line 302.
 (pdftex.def)             Requested size: 239.00558pt x 200.91162pt.
 
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/bx/n' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 332.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 302.
 
 
-Overfull \vbox (9.21935pt too high) detected at line 332
+Overfull \vbox (9.21935pt too high) detected at line 302
  []
 
-[37
+[34
 
  <./figures/complexity.jpg>]
 File: figures/complexity.jpg Graphic file (type jpg)
 <use figures/complexity.jpg>
-Package pdftex.def Info: figures/complexity.jpg  used on input line 332.
+Package pdftex.def Info: figures/complexity.jpg  used on input line 302.
 (pdftex.def)             Requested size: 239.00558pt x 200.91162pt.
 
-Overfull \vbox (9.21935pt too high) detected at line 332
+Overfull \vbox (9.21935pt too high) detected at line 302
  []
 
-[38
+[35
 
-] [39
+] [36
 
-] [40
+] [37
 
 ]
-<figures/qubits.png, id=443, 1276.77pt x 434.62375pt>
+<figures/qubits.png, id=427, 1276.77pt x 434.62375pt>
 File: figures/qubits.png Graphic file (type png)
 <use figures/qubits.png>
-Package pdftex.def Info: figures/qubits.png  used on input line 357.
-(pdftex.def)             Requested size: 378.41675pt x 104.16592pt.
- [41
+Package pdftex.def Info: figures/qubits.png  used on input line 327.
+(pdftex.def)             Requested size: 318.66571pt x 104.16592pt.
+ [38
 
  <./figures/qubits.png>]
-<figures/pulses.png, id=450, 722.7pt x 451.6875pt>
+<figures/pulses.png, id=434, 722.7pt x 451.6875pt>
 File: figures/pulses.png Graphic file (type png)
 <use figures/pulses.png>
-Package pdftex.def Info: figures/pulses.png  used on input line 357.
-(pdftex.def)             Requested size: 199.16766pt x 104.16162pt.
- [42
+Package pdftex.def Info: figures/pulses.png  used on input line 327.
+(pdftex.def)             Requested size: 179.252pt x 104.16162pt.
+ [39
 
  <./figures/pulses.png (PNG copy)>]
-<figures/circuit.png, id=456, 1356.06625pt x 433.62pt>
+<figures/circuit.png, id=440, 1356.06625pt x 433.62pt>
 File: figures/circuit.png Graphic file (type png)
 <use figures/circuit.png>
-Package pdftex.def Info: figures/circuit.png  used on input line 357.
+Package pdftex.def Info: figures/circuit.png  used on input line 327.
 (pdftex.def)             Requested size: 358.48679pt x 104.16356pt.
- [43
+ [40
 
  <./figures/circuit.png>]
-<figures/measurement.png, id=464, 2569.6pt x 1606.0pt>
+<figures/measurement.png, id=447, 2569.6pt x 1606.0pt>
 File: figures/measurement.png Graphic file (type png)
 <use figures/measurement.png>
-Package pdftex.def Info: figures/measurement.png  used on input line 357.
+Package pdftex.def Info: figures/measurement.png  used on input line 327.
 (pdftex.def)             Requested size: 199.14194pt x 104.1486pt.
- [44
+ [41
 
- <./figures/measurement.png>] <xymatrix 6x1
-250> [45
+ <./figures/measurement.png>]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+[42
+
+] (./main.vrb) [43
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [44
+
+] <xymatrix 6x1 250> [45
 
 ]
 <figures/Quantum_Logic_Gates.png, id=480, 347.55042pt x 427.21812pt>
 File: figures/Quantum_Logic_Gates.png Graphic file (type png)
 <use figures/Quantum_Logic_Gates.png>
 Package pdftex.def Info: figures/Quantum_Logic_Gates.png  used on input line 41
-5.
+8.
 (pdftex.def)             Requested size: 162.02821pt x 199.16928pt.
 
-Overfull \vbox (3.477pt too high) detected at line 415
+Overfull \vbox (3.477pt too high) detected at line 418
  []
 
 [46
@@ -2260,13 +2260,13 @@ Overfull \vbox (3.477pt too high) detected at line 415
 
 ]
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on inp
-ut line 537.
+ut line 540.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
-nput line 537.
+nput line 540.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
@@ -2274,10 +2274,10 @@ File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 <figures/baby3.pdf, id=503, 132.45586pt x 65.51476pt>
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [50
@@ -2285,10 +2285,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
  <./figures/baby3.pdf>]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [51
@@ -2296,10 +2296,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [52
@@ -2307,10 +2307,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [53
@@ -2318,10 +2318,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [54
@@ -2329,10 +2329,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [55
@@ -2340,10 +2340,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [56
@@ -2351,10 +2351,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [57
@@ -2362,10 +2362,10 @@ Overfull \vbox (36.36252pt too high) detected at line 537
 ]
 File: figures/baby3.pdf Graphic file (type pdf)
 <use figures/baby3.pdf>
-Package pdftex.def Info: figures/baby3.pdf  used on input line 537.
+Package pdftex.def Info: figures/baby3.pdf  used on input line 540.
 (pdftex.def)             Requested size: 159.333pt x 78.80922pt.
 
-Overfull \vbox (36.36252pt too high) detected at line 537
+Overfull \vbox (36.36252pt too high) detected at line 540
  []
 
 [58
@@ -2391,7 +2391,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \vbox (16.89438pt too high) detected at line 633
+Overfull \vbox (16.89438pt too high) detected at line 636
  []
 
 [59
@@ -2413,7 +2413,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \vbox (16.89438pt too high) detected at line 633
+Overfull \vbox (16.89438pt too high) detected at line 636
  []
 
 [60
@@ -2435,7 +2435,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \vbox (16.89438pt too high) detected at line 633
+Overfull \vbox (16.89438pt too high) detected at line 636
  []
 
 [61
@@ -2457,7 +2457,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \vbox (16.89438pt too high) detected at line 633
+Overfull \vbox (16.89438pt too high) detected at line 636
  []
 
 [62
@@ -2479,7 +2479,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \vbox (16.89438pt too high) detected at line 633
+Overfull \vbox (16.89438pt too high) detected at line 636
  []
 
 [63
@@ -2488,15 +2488,10 @@ Overfull \vbox (16.89438pt too high) detected at line 633
 <figures/variational.png, id=619, 432.61626pt x 356.33125pt>
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [64
@@ -2504,15 +2499,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
  <./figures/variational.png>]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [65
@@ -2520,15 +2510,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [66
@@ -2536,15 +2521,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [67
@@ -2552,15 +2532,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [68
@@ -2568,15 +2543,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [69
@@ -2584,15 +2554,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [70
@@ -2600,15 +2565,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [71
@@ -2616,15 +2576,10 @@ Overfull \vbox (46.70677pt too high) detected at line 660
 ]
 File: figures/variational.png Graphic file (type png)
 <use figures/variational.png>
-Package pdftex.def Info: figures/variational.png  used on input line 660.
-(pdftex.def)             Requested size: 199.1693pt x 164.05028pt.
+Package pdftex.def Info: figures/variational.png  used on input line 662.
+(pdftex.def)             Requested size: 159.333pt x 131.23697pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 660--660
- [][][] 
- []
-
-
-Overfull \vbox (46.70677pt too high) detected at line 660
+Overfull \vbox (13.60692pt too high) detected at line 662
  []
 
 [72
@@ -2665,10 +2620,10 @@ Package pdftex.def Info: figures/drawing2.pdf  used on input line 19.
 <figures/q1.png, id=696, 2126.94624pt x 690.58pt>
 File: figures/q1.png Graphic file (type png)
 <use figures/q1.png>
-Package pdftex.def Info: figures/q1.png  used on input line 730.
+Package pdftex.def Info: figures/q1.png  used on input line 732.
 (pdftex.def)             Requested size: 411.84818pt x 133.72786pt.
 
-Overfull \hbox (13.50958pt too wide) in paragraph at lines 730--730
+Overfull \hbox (13.50958pt too wide) in paragraph at lines 732--732
  [] 
  []
 
@@ -2678,15 +2633,15 @@ Overfull \hbox (13.50958pt too wide) in paragraph at lines 730--730
 <figures/challenge0.png, id=703, 1032.85875pt x 714.67pt>
 File: figures/challenge0.png Graphic file (type png)
 <use figures/challenge0.png>
-Package pdftex.def Info: figures/challenge0.png  used on input line 757.
+Package pdftex.def Info: figures/challenge0.png  used on input line 759.
 (pdftex.def)             Requested size: 267.27612pt x 184.9429pt.
 
-Overfull \hbox (5.51086pt too wide) in paragraph at lines 757--757
+Overfull \hbox (5.51086pt too wide) in paragraph at lines 759--759
  [] 
  []
 
 
-Overfull \vbox (16.85048pt too high) detected at line 757
+Overfull \vbox (16.85048pt too high) detected at line 759
  []
 
 [78
@@ -2695,15 +2650,15 @@ Overfull \vbox (16.85048pt too high) detected at line 757
 <figures/challenge.png, id=710, 1032.85875pt x 714.67pt>
 File: figures/challenge.png Graphic file (type png)
 <use figures/challenge.png>
-Package pdftex.def Info: figures/challenge.png  used on input line 757.
+Package pdftex.def Info: figures/challenge.png  used on input line 759.
 (pdftex.def)             Requested size: 267.27612pt x 184.9429pt.
 
-Overfull \hbox (5.51086pt too wide) in paragraph at lines 757--757
+Overfull \hbox (5.51086pt too wide) in paragraph at lines 759--759
  [] 
  []
 
 
-Overfull \vbox (3.05055pt too high) detected at line 757
+Overfull \vbox (3.05055pt too high) detected at line 759
  []
 
 [79
@@ -2712,7 +2667,7 @@ Overfull \vbox (3.05055pt too high) detected at line 757
 <figures/challenges.pdf, id=718, 914.45638pt x 312.20638pt>
 File: figures/challenges.pdf Graphic file (type pdf)
 <use figures/challenges.pdf>
-Package pdftex.def Info: figures/challenges.pdf  used on input line 768.
+Package pdftex.def Info: figures/challenges.pdf  used on input line 770.
 (pdftex.def)             Requested size: 378.42044pt x 129.1964pt.
  [80
 
@@ -2722,35 +2677,35 @@ Package pdftex.def Info: figures/challenges.pdf  used on input line 768.
 <figures/overview.png, id=841, 1323.344pt x 576.554pt>
 File: figures/overview.png Graphic file (type png)
 <use figures/overview.png>
-Package pdftex.def Info: figures/overview.png  used on input line 798.
+Package pdftex.def Info: figures/overview.png  used on input line 800.
 (pdftex.def)             Requested size: 159.33473pt x 69.41222pt.
 <figures/docs.png, id=842, 737.75626pt x 790.955pt>
 File: figures/docs.png Graphic file (type png)
 <use figures/docs.png>
-Package pdftex.def Info: figures/docs.png  used on input line 798.
+Package pdftex.def Info: figures/docs.png  used on input line 800.
 (pdftex.def)             Requested size: 142.26378pt x 152.51578pt.
  [82
 
  <./figures/overview.png> <./figures/docs.png>]
-<figures/qibo_ecosystem.pdf, id=852, 1083.08632pt x 734.745pt>
+<figures/qibo_ecosystem.pdf, id=853, 1083.08632pt x 734.745pt>
 File: figures/qibo_ecosystem.pdf Graphic file (type pdf)
 <use figures/qibo_ecosystem.pdf>
-Package pdftex.def Info: figures/qibo_ecosystem.pdf  used on input line 807.
+Package pdftex.def Info: figures/qibo_ecosystem.pdf  used on input line 809.
 (pdftex.def)             Requested size: 348.11514pt x 236.15796pt.
 
-Overfull \vbox (20.37236pt too high) detected at line 807
+Overfull \vbox (20.37236pt too high) detected at line 809
  []
 
 [83
 
  <./figures/qibo_ecosystem.pdf>]
-<figures/qibocoll.png, id=1004, 2547.5175pt x 1314.9125pt>
+<figures/qibocoll.png, id=1005, 2547.5175pt x 1314.9125pt>
 File: figures/qibocoll.png Graphic file (type png)
 <use figures/qibocoll.png>
-Package pdftex.def Info: figures/qibocoll.png  used on input line 813.
+Package pdftex.def Info: figures/qibocoll.png  used on input line 815.
 (pdftex.def)             Requested size: 385.84285pt x 199.16928pt.
 
-Overfull \vbox (7.477pt too high) detected at line 813
+Overfull \vbox (7.477pt too high) detected at line 815
  []
 
 [84
@@ -2758,57 +2713,57 @@ Overfull \vbox (7.477pt too high) detected at line 813
  <./figures/qibocoll.png>] [85
 
 ]
-<figures/backends.png, id=1018, 1252.68pt x 743.578pt>
+<figures/backends.png, id=1019, 1252.68pt x 743.578pt>
 File: figures/backends.png Graphic file (type png)
 <use figures/backends.png>
-Package pdftex.def Info: figures/backends.png  used on input line 826.
+Package pdftex.def Info: figures/backends.png  used on input line 828.
 (pdftex.def)             Requested size: 335.533pt x 199.16928pt.
 
-Overfull \vbox (13.99501pt too high) detected at line 826
+Overfull \vbox (13.99501pt too high) detected at line 828
  []
 
 [86
 
  <./figures/backends.png>]
-<figures/backends2.png, id=1025, 1252.68pt x 743.578pt>
+<figures/backends2.png, id=1026, 1252.68pt x 743.578pt>
 File: figures/backends2.png Graphic file (type png)
 <use figures/backends2.png>
-Package pdftex.def Info: figures/backends2.png  used on input line 826.
+Package pdftex.def Info: figures/backends2.png  used on input line 828.
 (pdftex.def)             Requested size: 335.533pt x 199.16928pt.
 
-Overfull \vbox (13.99501pt too high) detected at line 826
+Overfull \vbox (13.99501pt too high) detected at line 828
  []
 
 [87
 
  <./figures/backends2.png>]
-<figures/qibojit.pdf, id=1032, 860.25388pt x 355.3275pt>
+<figures/qibojit.pdf, id=1033, 860.25388pt x 355.3275pt>
 File: figures/qibojit.pdf Graphic file (type pdf)
 <use figures/qibojit.pdf>
-Package pdftex.def Info: figures/qibojit.pdf  used on input line 842.
+Package pdftex.def Info: figures/qibojit.pdf  used on input line 844.
 (pdftex.def)             Requested size: 344.42361pt x 142.26378pt.
 
-Overfull \vbox (24.84602pt too high) detected at line 842
+Overfull \vbox (24.84602pt too high) detected at line 844
  []
 
 [88
 
  <./figures/qibojit.pdf>]
-<figures/devices_qft_total_simulation_time_double.pdf, id=1084, 879.88722pt x 5
+<figures/devices_qft_total_simulation_time_double.pdf, id=1085, 879.88722pt x 5
 48.76772pt>
 File: figures/devices_qft_total_simulation_time_double.pdf Graphic file (type p
 df)
 <use figures/devices_qft_total_simulation_time_double.pdf>
 Package pdftex.def Info: figures/devices_qft_total_simulation_time_double.pdf  
-used on input line 868.
+used on input line 870.
 (pdftex.def)             Requested size: 199.16928pt x 124.21265pt.
-<figures/multigpu_32qubits_total_dry_time_double.pdf, id=1085, 1534.17857pt x 6
+<figures/multigpu_32qubits_total_dry_time_double.pdf, id=1086, 1534.17857pt x 6
 01.98277pt>
 File: figures/multigpu_32qubits_total_dry_time_double.pdf Graphic file (type pd
 f)
 <use figures/multigpu_32qubits_total_dry_time_double.pdf>
 Package pdftex.def Info: figures/multigpu_32qubits_total_dry_time_double.pdf  u
-sed on input line 868.
+sed on input line 870.
 (pdftex.def)             Requested size: 199.16928pt x 78.15027pt.
  [89
 
@@ -2820,7 +2775,7 @@ File: figures/libraries_single_30qubits_total_dry_time.pdf Graphic file (type p
 df)
 <use figures/libraries_single_30qubits_total_dry_time.pdf>
 Package pdftex.def Info: figures/libraries_single_30qubits_total_dry_time.pdf  
-used on input line 879.
+used on input line 881.
 (pdftex.def)             Requested size: 285.50986pt x 90.30057pt.
 <figures/libraries_double_30qubits_total_dry_time.pdf, id=1205, 1903.48114pt x 
 601.98277pt>
@@ -2828,10 +2783,10 @@ File: figures/libraries_double_30qubits_total_dry_time.pdf Graphic file (type p
 df)
 <use figures/libraries_double_30qubits_total_dry_time.pdf>
 Package pdftex.def Info: figures/libraries_double_30qubits_total_dry_time.pdf  
-used on input line 879.
+used on input line 881.
 (pdftex.def)             Requested size: 285.50986pt x 90.29352pt.
 
-Overfull \vbox (10.70174pt too high) detected at line 879
+Overfull \vbox (10.70174pt too high) detected at line 881
  []
 
 [90
@@ -2844,7 +2799,7 @@ double_30qubits_total_dry_time.pdf>] [91
 File: figures/algorithmdeployment.png Graphic file (type png)
 <use figures/algorithmdeployment.png>
 Package pdftex.def Info: figures/algorithmdeployment.png  used on input line 88
-7.
+9.
 (pdftex.def)             Requested size: 398.3386pt x 156.29306pt.
  [92
 
@@ -2852,15 +2807,15 @@ Package pdftex.def Info: figures/algorithmdeployment.png  used on input line 88
 <figures/instruments.pdf, id=1324, 631.39888pt x 580.08719pt>
 File: figures/instruments.pdf Graphic file (type pdf)
 <use figures/instruments.pdf>
-Package pdftex.def Info: figures/instruments.pdf  used on input line 914.
+Package pdftex.def Info: figures/instruments.pdf  used on input line 916.
 (pdftex.def)             Requested size: 184.9429pt x 169.91159pt.
 <figures/platform_object.pdf, id=1325, 697.64638pt x 313.17pt>
 File: figures/platform_object.pdf Graphic file (type pdf)
 <use figures/platform_object.pdf>
-Package pdftex.def Info: figures/platform_object.pdf  used on input line 914.
+Package pdftex.def Info: figures/platform_object.pdf  used on input line 916.
 (pdftex.def)             Requested size: 230.46574pt x 103.45154pt.
 
-Overfull \vbox (16.3089pt too high) detected at line 914
+Overfull \vbox (16.3089pt too high) detected at line 916
  []
 
 [93
@@ -2870,23 +2825,23 @@ Overfull \vbox (16.3089pt too high) detected at line 914
 File: figures/qpu_characterization.pdf Graphic file (type pdf)
 <use figures/qpu_characterization.pdf>
 Package pdftex.def Info: figures/qpu_characterization.pdf  used on input line 9
-35.
+37.
 (pdftex.def)             Requested size: 256.0748pt x 145.74673pt.
 <figures/qibocal_report.png, id=1411, 1115.16624pt x 707.64375pt>
 File: figures/qibocal_report.png Graphic file (type png)
 <use figures/qibocal_report.png>
-Package pdftex.def Info: figures/qibocal_report.png  used on input line 935.
+Package pdftex.def Info: figures/qibocal_report.png  used on input line 937.
 (pdftex.def)             Requested size: 170.71652pt x 108.32312pt.
  [94
 
  <./figures/qpu_characterization.pdf> <./figures/qibocal_report.png>]
-<figures/routines.pdf, id=1439, 641.89409pt x 405.56143pt>
+<figures/routines.pdf, id=1438, 641.89409pt x 405.56143pt>
 File: figures/routines.pdf Graphic file (type pdf)
 <use figures/routines.pdf>
-Package pdftex.def Info: figures/routines.pdf  used on input line 951.
+Package pdftex.def Info: figures/routines.pdf  used on input line 953.
 (pdftex.def)             Requested size: 292.71849pt x 184.9429pt.
 
-Overfull \vbox (25.29768pt too high) detected at line 951
+Overfull \vbox (25.29768pt too high) detected at line 953
  []
 
 [95
@@ -2913,10 +2868,10 @@ Package pdftex.def Info: figures/bell_sweep_fig.pdf  used on input line 5.
 <figures/qqpdf.pdf, id=1596, 302.91606pt x 211.45926pt>
 File: figures/qqpdf.pdf Graphic file (type pdf)
 <use figures/qqpdf.pdf>
-Package pdftex.def Info: figures/qqpdf.pdf  used on input line 1008.
+Package pdftex.def Info: figures/qqpdf.pdf  used on input line 1010.
 (pdftex.def)             Requested size: 170.71652pt x 119.17462pt.
 
-Overfull \vbox (21.84592pt too high) detected at line 1008
+Overfull \vbox (21.84592pt too high) detected at line 1010
  []
 
 [98
@@ -2926,7 +2881,7 @@ Overfull \vbox (21.84592pt too high) detected at line 1008
 ]
 File: figures/docs.png Graphic file (type png)
 <use figures/docs.png>
-Package pdftex.def Info: figures/docs.png  used on input line 1034.
+Package pdftex.def Info: figures/docs.png  used on input line 1036.
 (pdftex.def)             Requested size: 142.26378pt x 152.51578pt.
  [100
 
@@ -2940,30 +2895,24 @@ Package pdftex.def Info: figures/docs.png  used on input line 1034.
 \tf@snm=\write11
 \openout11 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1037.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1037.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1039.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1039.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1037.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1037.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1039.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1039.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 018190A19E61E1B98E19ECB3304D9153;468.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0D825282CE8C63453885C892B8D9AED3;1255
-(rerunfilecheck)             After:  839516EE8EC631F03BDBDBE2D090A7D4;482.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40687 strings out of 481239
- 834200 string characters out of 5920377
- 1222054 words of memory out of 5000000
- 54767 multiletter control sequences out of 15000+600000
+ 40686 strings out of 481239
+ 834187 string characters out of 5920377
+ 1221934 words of memory out of 5000000
+ 54766 multiletter control sequences out of 15000+600000
  559182 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,22n,108p,1827b,1503s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2996,14 +2945,15 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfso1000.pfb>
-Output written on main.pdf (100 pages, 19116712 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfso1000.pfb>
+Output written on main.pdf (100 pages, 19123459 bytes).
 PDF statistics:
- 1818 PDF objects out of 2073 (max. 8388607)
- 941 compressed objects within 10 object streams
+ 1821 PDF objects out of 2073 (max. 8388607)
+ 943 compressed objects within 10 object streams
  210 named destinations out of 1000 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 
