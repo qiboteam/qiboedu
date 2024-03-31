@@ -1,7 +1,7 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Quantum Systems}{11}{0}{2}
-\beamer@sectionintoc {3}{A snapshot of quantum computing}{39}{0}{3}
+\beamer@sectionintoc {3}{Quantum computing}{36}{0}{3}
 \beamer@sectionintoc {4}{Quantum software challenges}{76}{0}{4}
 \beamer@sectionintoc {5}{Introducing Qibo}{81}{0}{5}
 \beamer@sectionintoc {6}{Quantum Simulation}{85}{0}{6}
