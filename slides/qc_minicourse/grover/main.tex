@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169, 8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
+\documentclass[8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
 \usepackage[labelfont={color=amethyst,bf}]{caption}
 \setbeamercolor{background canvas}{bg=white}
 \usetheme[progressbar=frametitle]{metropolis}
@@ -17,6 +17,7 @@
 \usepackage{subcaption}
 \usepackage{multicol}
 \usepackage{bm}
+\usepackage{overpic}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{enumitem}
@@ -27,7 +28,6 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows,calc,math,angles,quotes}
 \usepackage{blochsphere}
-
 
 \usetikzlibrary{arrows,automata}
 \usetikzlibrary{positioning}
@@ -99,18 +99,18 @@
 
 %\usepackage{xspace}
 
-\title{The Grover search algorithm}
+\title{Introduction to quantum computing}
 \subtitle{Quantum Computing Minicourse}
-\date{9 April 2024}
+\date{8 April 2024}
 \author[Stefano Carrazza and Matteo Robbiati]{Stefano Carrazza and Matteo Robbiati}
 \titlegraphic{
 \begin{tikzpicture}[overlay, remember picture]
 
 \node[at=(current page.south east), anchor=south east] {%
-\includegraphics[width=.14\textwidth]{figures/qibo.png} 
-\includegraphics[width=.14\textwidth]{figures/unimi.png} 
-\includegraphics[width=.14\textwidth]{figures/cern.png}  
-\includegraphics[width=.14\textwidth]{figures/ictp.png}  
+\includegraphics[width=.18\textwidth]{figures/qibo.png} 
+\includegraphics[width=.18\textwidth]{figures/unimi.png} 
+\includegraphics[width=.18\textwidth]{figures/cern.png}  
+\includegraphics[width=.18\textwidth]{figures/ictp.png}  
 };
 \end{tikzpicture}
 }
@@ -118,41 +118,16 @@
 
 \begin{document}
 
+\begin{frame}
 \maketitle
-
-\begin{frame}{Ancillary qubits}
-\textbf{Ancilla} qubits are extra qubits, which help a qubit system in some computations.   
-For example:
-   \begin{figure}
-     \includegraphics[width=0.8\linewidth]{figures/ancillas.pdf}
-   \end{figure}
 \end{frame}
 
-\begin{frame}{The phase kickback}
-One clever trick we can implement using ancillas is the \textbf{phase kickback}.
-
-\begin{itemize}[noitemsep]
-\item{1.} Take into account two qubits: a system qubit $q$ and an ancilla $a$.  
-\item{2.} Suppose we prepare $q$ into a superposed state and $a$ into the excited state:
-$$ \ket{q}=H\ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}}, \qquad \ket{a}=\ket{1}. $$
-\item{3.} Let's consider now a controlled $Z$ operation.
-\item{4.} What happen if we now apply the $CZ$ using $q$ as control and $a$
-as target?
-\item{5.} we could expect something happen on the target qubit! Not really:
-$$ CZ \biggl( \frac{\ket{0}+\ket{1}}{\sqrt{2}} \otimes \ket{1} \biggr)  = 
-CZ \biggl( \frac{\ket{01}+\ket{11}}{\sqrt{2}} \biggr) = 
-\frac{\ket{01}+Z\ket{11}}{\sqrt{2}} =
-\frac{\ket{01}-\ket{11}}{\sqrt{2}} =
-\frac{\ket{0}-\ket{1}}{\sqrt{2}} \otimes \ket{1}.
-$$ 
-\item{6.} acting on $a$ we got a phase kickback on the system!
+\begin{frame}{TOC}
+\begin{itemize}
+\item[1.] Why QC; 
+\item[2.] What is a QC;
+\item[3.] ...
 \end{itemize}
-
-\begin{tcolorbox}[colback=red!15, title=Important]
-This happens if the ancilla is prepared into a state which is eigenvector of the 
-controlled operation.
-\end{tcolorbox}
-
 \end{frame}
 
 \end{document}
