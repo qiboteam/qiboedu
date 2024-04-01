@@ -100,7 +100,7 @@
 
 %\usepackage{xspace}
 
-\title{Introduction to Quantum Computing}
+\title{Introduction to quantum computing}
 \subtitle{Quantum Computing Minicourse ICTP-SAIFR}
 \date{8 April 2024}
 \author{Stefano Carrazza$^\ddag$ and Matteo Robbiati$^\dagger$}
@@ -109,11 +109,11 @@ $^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
 \titlegraphic{
 \begin{tikzpicture}[overlay, remember picture]
 
-\node[at=(current page.south east), anchor=south east] {%
-\includegraphics[width=.14\textwidth]{figures/qibo.png}
-\includegraphics[width=.14\textwidth]{figures/unimi.png}
-\includegraphics[width=.14\textwidth]{figures/cern.png}
-\includegraphics[width=.14\textwidth]{figures/ictp.png}
+\node[at=(current page.south), anchor=south, shift={(-3cm, 0)}] {%
+\includegraphics[width=.12\textwidth]{figures/qibo.png}
+\includegraphics[width=.12\textwidth]{figures/unimi.png}
+\includegraphics[width=.12\textwidth]{figures/cern.png}
+\includegraphics[width=.12\textwidth]{figures/ictp.png}
 };
 \end{tikzpicture}
 }
@@ -121,7 +121,14 @@ $^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
 
 \begin{document}
 
+\begin{frame}
 \maketitle
+\begin{picture}(0,0)
+    \put(270,20){
+        \includegraphics[width=0.3\textwidth]{figures/qibo_mascotte.png}
+    }
+\end{picture}
+\end{frame}
 
 \section{Introduction}
 
