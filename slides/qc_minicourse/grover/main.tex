@@ -1,4 +1,4 @@
-\documentclass[8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
+\documentclass[aspectratio=169, 8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
 \usepackage[labelfont={color=amethyst,bf}]{caption}
 \setbeamercolor{background canvas}{bg=white}
 \usetheme[progressbar=frametitle]{metropolis}
@@ -17,8 +17,8 @@
 \usepackage{subcaption}
 \usepackage{multicol}
 \usepackage{bm}
-\usepackage{overpic}
 \usepackage{algorithm}
+\usepackage{overpic}
 \usepackage{algpseudocode}
 \usepackage{enumitem}
 
@@ -28,6 +28,7 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows,calc,math,angles,quotes}
 \usepackage{blochsphere}
+
 
 \usetikzlibrary{arrows,automata}
 \usetikzlibrary{positioning}
@@ -99,18 +100,20 @@
 
 %\usepackage{xspace}
 
-\title{Introduction to quantum computing}
-\subtitle{Quantum Computing Minicourse}
+\title{Grover search algorithm}
+\subtitle{Quantum Computing Minicourse ICTP-SAIFR}
 \date{8 April 2024}
-\author[Stefano Carrazza and Matteo Robbiati]{Stefano Carrazza and Matteo Robbiati}
+\author{Stefano Carrazza$^\ddag$ and Matteo Robbiati$^\dagger$}
+\institute{$^\ddag$ Associate Professor \& Researcher, University of Milan and INFN Milan, Italy.\\
+$^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
 \titlegraphic{
 \begin{tikzpicture}[overlay, remember picture]
 
-\node[at=(current page.south east), anchor=south east] {%
-\includegraphics[width=.18\textwidth]{figures/qibo.png} 
-\includegraphics[width=.18\textwidth]{figures/unimi.png} 
-\includegraphics[width=.18\textwidth]{figures/cern.png}  
-\includegraphics[width=.18\textwidth]{figures/ictp.png}  
+\node[at=(current page.south), anchor=south, shift={(-3cm, 0)}] {%
+\includegraphics[width=.12\textwidth]{figures/qibo.png}
+\includegraphics[width=.12\textwidth]{figures/unimi.png}
+\includegraphics[width=.12\textwidth]{figures/cern.png}
+\includegraphics[width=.12\textwidth]{figures/ictp.png}
 };
 \end{tikzpicture}
 }
@@ -120,14 +123,126 @@
 
 \begin{frame}
 \maketitle
+\begin{picture}(0,0)
+    \put(270,20){
+        \includegraphics[width=0.3\textwidth]{figures/qibo_detective.png}
+    }
+\end{picture}
 \end{frame}
 
-\begin{frame}{TOC}
-\begin{itemize}
-\item[1.] Why QC; 
-\item[2.] What is a QC;
-\item[3.] ...
+\begin{frame}{Motivation}
+The Grover algorithm is powerful when searching an item 
+among an unordered set of candidates. 
+
+\begin{multicols}{3}
+Extract the jack of clubs from a Poker deck
+\begin{figure}
+    \includegraphics[width=.25\textwidth]{figures/poker.png}
+\end{figure}
+
+Find a passcode composed of 10 numbers
+\begin{figure}
+    \includegraphics[width=.25\textwidth]{figures/pwd.png}
+\end{figure}
+
+Find an antidote to the Cobra poison, exploring $10^{20}$ 
+molecules
+\begin{figure}
+    \includegraphics[width=.25\textwidth]{figures/cobra.png}
+\end{figure}
+\end{multicols}
+
+\faQuestion\,\,How many attempts could you need, in the worst scenario, to explore all the possibilities?
+
+\faExclamationTriangle\,\, In the worst scenario, you will need to check \textbf{$52$ cards}, \textbf{$10^{10}$} \textbf{passcodes}
+and \textbf{$10^{20}$} \textbf{molecules}.
+\end{frame}
+
+\begin{frame}{Quadratic speedup}
+If we consider a time cost of $\delta=10^{-8}$ seconds for any algorithmic call (quantum or classical) we would wait:
+\begin{multicols}{2}
+\textbf{On a classical computer}
+\begin{itemize}[noitemsep]
+\item[\footnotesize\faCircle] $0.52\,\,\mu \text{s}$ to find the jack of clubs;
+\item[\footnotesize\faCircle] $100$ seconds to find the passcode;
+\item[\footnotesize\faCircle] $\sim 31688$ years to find the Cobra antidote.
 \end{itemize}
+\begin{figure}
+    \includegraphics[width=.35\textwidth]{figures/ccomp.png}
+\end{figure}
+
+\textbf{On a quantum computer}
+\begin{itemize}[noitemsep]
+\item[\footnotesize\faCircle] $0.0721\,\,\mu \text{s}$ to find the jack of clubs;
+\item[\footnotesize\faCircle] $0.001$ seconds to find the passcode;
+\item[\footnotesize\faCircle] $100$ seconds to find the Cobra antidote.
+\end{itemize}
+\begin{figure}
+    \includegraphics[width=.35\textwidth]{figures/qcomp.png}
+\end{figure}
+\end{multicols}
+\begin{tcolorbox}[colback=red!15]
+The Grover algorithm solves this kind of search with a number of algorithmic calls 
+proportional to $\sqrt{N}$, where $N$ is the dimension of the search space.
+\end{tcolorbox}
+\end{frame}
+
+
+\begin{frame}{The Grover algorithm}
+The key steps of the Grover algorithm:
+
+\begin{itemize}[noitemsep]
+\item[1.] prepare a system of $N$ qubits into a maximally superposed state;
+\item[2.] prepare an ancilla qubit into the $\ket{-}$ state;
+\item[3.] apply an oracle operator $U_f$ which can mark the correct solution;
+\item[4.] apply a diffusion operator $U_s$ which amplifies the correct solution;
+\item[5.] repeat 3. and 4. for the optimal number of times.
+\end{itemize}
+\pause
+
+In terms of quantum circuit:
+\begin{figure}
+    \includegraphics[width=.9\textwidth]{figures/grover-circ.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{step 1 and 2: the state preparation}
+Lets consider $2^N$ elements composing our search space. \pause
+
+We can encode them into the amplitudes of a quantum state of $N$ qubits: 
+
+$$ 
+\begin{bmatrix}
+\text{item}_1 \\
+\text{item}_2 \\
+\dots \\
+\text{item}_{2^N}
+\end{bmatrix} \qquad \to \qquad 
+\begin{bmatrix}
+\psi_{00 \dots 0} \\
+\psi_{00 \dots 1}  \\
+\dots \\
+\psi_{11 \dots 1}
+\end{bmatrix}  
+$$
+\pause 
+
+Let us use an \textbf{ancilla}, which will help us in manipulating 
+the system's qubits through a kickback-like procedure.
+
+In the complete framework, we are going to use $N+1$ qubits, whose state is $\ket{\psi}\ket{a}$.
+
+The first step of the algorithm is the state preparation into one maximally superposed state:
+$$ H^{\otimes N + 1} \ket{00\dots0}\ket{1} = \ket{++\dots+}\ket{-}. $$
+
+\end{frame}
+
+\begin{frame}{Step 3: the oracle $U_f$}
+
+\end{frame}
+
+\begin{frame}{Step 4: the diffusion operator $U_s$}
+
 \end{frame}
 
 \end{document}
