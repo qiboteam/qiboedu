@@ -127,8 +127,10 @@
 \headcommand {\beamer@framepages {99}{99}}
 \headcommand {\slideentry {9}{0}{2}{100/100}{}{0}}
 \headcommand {\beamer@framepages {100}{100}}
-\headcommand {\beamer@partpages {1}{100}}
-\headcommand {\beamer@subsectionpages {99}{100}}
-\headcommand {\beamer@sectionpages {99}{100}}
-\headcommand {\beamer@documentpages {100}}
-\headcommand {\gdef \inserttotalframenumber {42}}
+\headcommand {\slideentry {9}{0}{3}{101/101}{}{0}}
+\headcommand {\beamer@framepages {101}{101}}
+\headcommand {\beamer@partpages {1}{101}}
+\headcommand {\beamer@subsectionpages {99}{101}}
+\headcommand {\beamer@sectionpages {99}{101}}
+\headcommand {\beamer@documentpages {101}}
+\headcommand {\gdef \inserttotalframenumber {43}}
