@@ -1,10 +1,10 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Quantum Systems}{11}{0}{2}
-\beamer@sectionintoc {3}{Quantum computing}{36}{0}{3}
-\beamer@sectionintoc {4}{Quantum software challenges}{76}{0}{4}
-\beamer@sectionintoc {5}{Introducing Qibo}{81}{0}{5}
-\beamer@sectionintoc {6}{Quantum Simulation}{85}{0}{6}
-\beamer@sectionintoc {7}{Laboratory modules}{91}{0}{7}
-\beamer@sectionintoc {8}{Full-stack applications}{96}{0}{8}
-\beamer@sectionintoc {9}{Outlook}{99}{0}{9}
+\beamer@sectionintoc {3}{Quantum computing}{20}{0}{3}
+\beamer@sectionintoc {4}{Quantum software challenges}{75}{0}{4}
+\beamer@sectionintoc {5}{Introducing Qibo}{80}{0}{5}
+\beamer@sectionintoc {6}{Quantum Simulation}{84}{0}{6}
+\beamer@sectionintoc {7}{Laboratory modules}{90}{0}{7}
+\beamer@sectionintoc {8}{Full-stack applications}{95}{0}{8}
+\beamer@sectionintoc {9}{Outlook}{98}{0}{9}
