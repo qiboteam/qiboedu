@@ -218,31 +218,75 @@ $$
 \dots \\
 \text{item}_{2^N}
 \end{bmatrix} \qquad \to \qquad 
-\begin{bmatrix}
+\ket{\psi} = \begin{bmatrix}
 \psi_{00 \dots 0} \\
 \psi_{00 \dots 1}  \\
 \dots \\
 \psi_{11 \dots 1}
 \end{bmatrix}  
+\equiv 
+\begin{bmatrix}
+x_0 \\
+x_1  \\
+\dots \\
+x_{2^N-1}
+\end{bmatrix} . 
 $$
 \pause 
 
-Let us use an \textbf{ancilla}, which will help us in manipulating 
-the system's qubits through a kickback-like procedure.
 
-In the complete framework, we are going to use $N+1$ qubits, whose state is $\ket{\psi}\ket{a}$.
+In total, we will use $N$ qubits of the system and 
+one ancilla. Then, the full quantum state will be $\ket{\psi}_N \ket{a}$. \pause
 
-The first step of the algorithm is the state preparation into one maximally superposed state:
-$$ H^{\otimes N + 1} \ket{00\dots0}\ket{1} = \ket{++\dots+}\ket{-}. $$
+The first step of the algorithm is the state preparation into the following superposed state:
+\begin{multicols}{2}
+$$ H^{\otimes N + 1} \ket{0}_N \ket{1} = \biggl[ \frac{1}{2^{N/2}}\sum_{i=0}^{2^N - 1} \ket{x_i} \biggr] \otimes \ket{-}. $$
+
+\begin{figure}
+   \includegraphics[width=0.45\textwidth]{figures/state1.png}
+\end{figure}
+\end{multicols}
 
 \end{frame}
 
 \begin{frame}{Step 3: the oracle $U_f$}
+We consider now a function $f:\{0,1\}^N \to \{0,1\}.$ whose goal is to mark the correct 
+solution:
+$$ 
+f(x) = \begin{cases}
+1 \qquad \text{if\,\,correct}, \\
+0 \qquad \text{otherwise}.
+\end{cases} $$
+This function is typically embedded into a quantum oracle $U_f$ which is able to 
+recognize the solution for us. It's important to underline that even if the oracle 
+can detect the solution, may don't know it's exact value.
+
+The oracle marks the solution (one of the amplitudes) by flipping its sign thanks to
+a phase-kickback procedure.
+
+\begin{multicols}{2}
+$$ U_f \ket{x}\ket{-} = (-1)^{f(x)}\ket{x}\ket{-}. $$
+
+This can be done using a multi-controlled operation which triggers the kickback only 
+when the system state corresponds to the target one.
+
+\begin{figure}
+   \includegraphics[width=0.5\textwidth]{figures/state2.png}
+\end{figure}
+\end{multicols}
 
 \end{frame}
 
 \begin{frame}{Step 4: the diffusion operator $U_s$}
 
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge Let's code!
+\begin{figure}
+   \includegraphics[width=0.7\textwidth]{figures/hands_on.png}
+\end{figure}
 \end{frame}
 
 \end{document}
