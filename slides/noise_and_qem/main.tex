@@ -1,4 +1,4 @@
-\documentclass[8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
+\documentclass[aspectratio=169, 8pt, xcolor={svgnames}, hyperref={linkcolor=black}]{beamer}
 \usepackage[labelfont={color=amethyst,bf}]{caption}
 \setbeamercolor{background canvas}{bg=white}
 \usetheme[progressbar=frametitle]{metropolis}
@@ -18,6 +18,7 @@
 \usepackage{multicol}
 \usepackage{bm}
 \usepackage{algorithm}
+\usepackage{overpic}
 \usepackage{algpseudocode}
 \usepackage{enumitem}
 
@@ -27,6 +28,7 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows,calc,math,angles,quotes}
 \usepackage{blochsphere}
+
 
 \usetikzlibrary{arrows,automata}
 \usetikzlibrary{positioning}
@@ -98,26 +100,23 @@
 
 %\usepackage{xspace}
 
-\title{Noise in quantum computing}
-\subtitle{Quantum Computing Minicourse}
-\date{10 April 2024}
-\author[Stefano Carrazza and Matteo Robbiati]{Stefano Carrazza and Matteo Robbiati}
-\titlegraphic{
-\begin{tikzpicture}[overlay, remember picture]
-
-\node[at=(current page.south east), anchor=south east] {%
-\includegraphics[width=.18\textwidth]{figures/qibo.png} 
-\includegraphics[width=.18\textwidth]{figures/unimi.png} 
-\includegraphics[width=.18\textwidth]{figures/cern.png}  
-\includegraphics[width=.18\textwidth]{figures/ictp.png}  
-};
-\end{tikzpicture}
-}
-
+\title{Quantum Noise and error mitigation}
+\subtitle{Quantum Computing Minicourse ICTP-SAIFR}
+\date{8 April 2024}
+\author{Stefano Carrazza$^\ddag$ and Matteo Robbiati$^\dagger$}
+\institute{$^\ddag$ Associate Professor \& Researcher, University of Milan and INFN Milan, Italy.\\
+$^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
 
 \begin{document}
 
+\begin{frame}
 \maketitle
+\begin{picture}(0,0)
+    \put(270,40){
+        \includegraphics[width=0.25\textwidth]{figures/qibo_noise.png}
+    }
+\end{picture}
+\end{frame}
 
 \begin{frame}{TOC}
 \begin{itemize}
