@@ -18,10 +18,11 @@ packages = [{ include = "qiboedu", from = "src" }]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+jupyterlab = "^4.1.5"
 python = ">=3.10,<3.12"
 qibo = "^0.2.4"
 qibojit = "^0.1.2"
-jupyterlab = "^4.1.1"
+matplotlib = "^3.8.0"
 
 [build-system]
 requires = ["poetry-core"]
