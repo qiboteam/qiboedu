@@ -143,11 +143,11 @@ One clever trick we can implement using ancillas is the \textbf{phase kickback}.
 \pause
 
 \begin{itemize}[noitemsep]
-\item{1.} Take into account two qubits: a system qubit $q$ and an ancilla $a$.  \pause
-\item{2.} Suppose we prepare $q$ into a superposed state and $a$ into the excited state:
-$$ \ket{q}=H\ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}}, \qquad \ket{a}=\ket{1}. $$ \pause
+\item{1.} Take into account two qubits: a system qubit $x$ and an ancilla $y$.  \pause
+\item{2.} Suppose we prepare $x$ into a superposed state and $y$ into the excited state:
+$$ \ket{x}=H\ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}}, \qquad \ket{y}=\ket{1}. $$ \pause
 \item{3.} Let's consider now a controlled $Z$ operation. \pause
-\item{4.} What happen if we now apply the $CZ$ using $q$ as control and $a$
+\item{4.} What happen if we now apply the $CZ$ using $x$ as control and $y$
 as target? \pause
 \item{5.} we could expect something happen on the target qubit! Not really: \pause
 $$ CZ \biggl( \frac{\ket{0}+\ket{1}}{\sqrt{2}} \otimes \ket{1} \biggr)  = 
@@ -156,7 +156,7 @@ CZ \biggl( \frac{\ket{01}+\ket{11}}{\sqrt{2}} \biggr) = \pause
 \frac{\ket{01}-\ket{11}}{\sqrt{2}} = \pause
 \frac{\ket{0}-\ket{1}}{\sqrt{2}} \otimes \ket{1}.
 $$ \pause
-\item{6.} acting on $a$ we got a phase kickback on the system!
+\item{6.} adding an extra $H$ to the control qubit, we will detect the state manipulation!
 \end{itemize}
 
 \pause
@@ -182,7 +182,31 @@ advantage}!
 \end{frame}
 
 \begin{frame}{Oracles}
+It can be useful to define the phase kickback using the concept of quantum \textbf{oracle}.
 
+\begin{itemize}[noitemsep]
+\item[1.] Considering a system of qubits of state $\ket{x}$ and a set of extra qubits of state $\ket{y}$; \pause
+\item[2.] in reversible computation $x$ is called \textbf{input register} and $y$ \textbf{output register}. In this 
+course $x$ will always be composed of our system of qubits and $y$ will be ancillary qubits; \pause
+\item[3.] considering a function $f(x)$, acting on $y$, we define 
+oracle $U_f$, a \textbf{black box} operator whose action on $\ket{y}$ is:
+\begin{figure}
+   \includegraphics[width=0.4\textwidth]{figures/oracle.pdf}
+\end{figure}
+\pause
+\end{itemize}
+In the explicit case of the phase kickback, we can use $U_f$ to write the action: $U_f \ket{x}\ket{-} = (-1)^{x}\ket{x}\ket{-}.$\pause
+
+Extending it to a multi-dimensional case, we can write: $U_f \ket{x}\ket{-} = (-1)^{f(x)}\ket{x}\ket{-},$ whith $f(x) \in \{0,1\}$.
 \end{frame}
+
+\begin{frame}
+\centering
+\Huge Let's code!
+\begin{figure}
+   \includegraphics[width=0.7\textwidth]{figures/hands_on.png}
+\end{figure}
+\end{frame}
+
 
 \end{document}
