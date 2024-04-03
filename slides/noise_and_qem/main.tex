@@ -136,12 +136,11 @@ Each of them (even all together) can deteriorate a quantum state.
 
 \begin{frame}{Without noise we can use state vectors}
 
-In the previous lectures we introduced the state vector manipulation, where unitary 
-operators $\mathcal{U}$ have been used to evolve quantum states:
+For now we talked about state vector manipulation, where unitary 
+gates $\mathcal{U}$ are used to evolve quantum states:
 $$ \ket{\psi}' = \mathcal{U} \ket{\psi}. $$ \pause
-
-This picture is fine until the quantum state is \textbf{pure}, namely, it can be 
-represented by a single vector into the Hilbert space. \pause
+This picture is fine until the quantum state is \textbf{pure}, namely, it is 
+represented by a vector into the Hilbert space. \pause
 
 \begin{multicols}{2}
 \texttt{\\}
@@ -192,7 +191,7 @@ another point in a reversible way.
 are no longer usable, because the system is not isolated. \pause
 
 Noise corrupts the quantum states, building \textbf{mixed states}, namely classical 
-mixture of pure states. \pause An useful tool to represent both pure and mixes states is the \textbf{density matrix}, 
+mixture of pure states. \pause An useful tool to represent both pure and mixed states is the \textbf{density matrix}, 
 which in general is defined as:
 $$ \rho = \sum_{i=0}^n p_i \ket{\psi_i}\bra{\psi_i}, $$
 where $p_i$ is the statistical weight of the pure state $\ket{\psi_i}$ in the mix. 
@@ -202,14 +201,14 @@ If $n=1$, then $\rho=\ket{\psi}\bra{\psi}$ and $\ket{\psi}$ is pure. \pause
 \textbf{About mixed states}
 
 {\footnotesize\faCircle\,\,} The evolution of a density matrix is described in terms 
-of superoperators $\rho' = \mathcal{E} (\rho)$, which is a generalization of the 
-unitary case: $ \rho' = U^{\dagger} \rho U. $ 
+of superoperators $\rho' = \mathcal{E} (\rho)$, which, in the case of pure states 
+act like unitaries $ \rho' = \mathcal{E}^{\dagger} \rho \mathcal{E}. $ 
 
 {\footnotesize\faCircle\,\,} A mixed state of a single qubit can be visualized as a point within the surface
 of the Bloch sphere. 
 
-{\footnotesize\faCircle\,\,} The effect of the noise can be seen as moving a point 
-from the surface of the sphere to the inner region. This is not reversible! 
+{\footnotesize\faCircle\,\,} The effect of the noise can be represented by a superoperator
+which can map points on the surface into points located within the Bloch sphere.     
 \begin{center}
 \begin{tikzpicture}
 
@@ -245,8 +244,9 @@ from the surface of the sphere to the inner region. This is not reversible!
 \pause
 \small
 \begin{multicols}{2}
-\textbf{Example of simple pure state}\\
-The density matrix of $\ket{+}$ is 
+\textbf{The maximally entangled state is a pure state}
+
+The density matrix of $\ket{+} = \frac{1}{\sqrt{2}}(\ket{0}+\ket{1})$ is 
 \begin{multline*}
 $$\rho_{\rm pure} = \ket{+}\bra{+} =
 \\ = \begin{bmatrix} 1/\sqrt{2} & 1/\sqrt{2}  \end{bmatrix}\begin{bmatrix} 
@@ -274,7 +274,8 @@ $$\rho_{\rm pure} = \ket{+}\bra{+} =
 \end{tikzpicture}
 \end{center}
 
-\textbf{Example of simple mixed state}\\
+\textbf{The state which maximally mix $\ket{0}$ and $\ket{1}$}
+
 The density matrix of $\frac{1}{2} \bigl( \ket{0}\bra{0} + \ket{1}\bra{1} \bigr)$ is
 \begin{multline*}
 \rho_{\rm mix} = \frac{1}{2} \bigl( \ket{0}\bra{0} + \ket{1}\bra{1} \bigr) =
@@ -309,26 +310,28 @@ The density matrix of $\frac{1}{2} \bigl( \ket{0}\bra{0} + \ket{1}\bra{1} \bigr)
 \begin{frame}{The Pauli representation of the noise}
 We can now define a superoperator $\mathcal{N}$, which represents the action of the 
 noise on a state:
-$ \rho_{\rm noisy} = \mathcal{N}(\rho). $
+$ \rho_{\rm noisy} = \mathcal{N}(\rho). $ \pause
 
 We can exploit the Pauli's operator to write a noise model:
 \begin{itemize}[noitemsep]
-\item[-] we use $X$ to apply random bitflip $\ket{0}=X\ket{1}$ and $\ket{1}=X\ket{0}$;
-\item[-] we use $Z$ to apply random phase flip $\ket{0}=Z\ket{0}$ and $-\ket{1}=Z\ket{1}$;
-\item[-] we use $Y$ to apply more complex manipulations since $Y=iXZ$.
+\item[-] we use $X$ to apply random bitflip $\ket{0}=X\ket{1}$ and $\ket{1}=X\ket{0}$ with probability $p_x$;
+\item[-] we use $Z$ to apply random phase flip $\ket{0}=Z\ket{0}$ and $-\ket{1}=Z\ket{1}$ with probability $p_z$;
+\item[-] we use $Y$ to apply more complex manipulations since $Y=iXZ$ with probability $p_y$. \pause
 \end{itemize}
 Then the combined effect of these Pauli components is:
-$$ \mathcal{N}(\rho) = \textcolor{purple}{p_I I \rho I} + p_x X \rho X + p_y Y \rho Y + p_x Z \rho Z, $$
-where $p_I+p_x+p_y+p_z=1$ and the \textcolor{purple}{first term} of the sum represent the 
-case in which $\rho$ remains unchanged. 
+$$ \mathcal{N}(\rho) = \textcolor{purple}{\biggl(1 - \sum_{k}p_k\biggr) \rho} + \sum_k p_k P_k \rho P_k $$
+where $\sum_k p_k \leq 1$, $P_k$ are the Paulis $\{X, Y, Z\}$
+ and the \textcolor{purple}{first term} describe when $\rho$ remains unchanged. \pause
 
-\textbf{Final comments}
-\vspace{-0.2cm}
+\vspace{0.2cm}
+\begin{tcolorbox}[colback=red!15, title=Effect of the noise when computing expectation values]
 \begin{itemize}[noitemsep]
-\item[1.] The effect of this noise model is to push any state $\rho$ closer to the maximally mixed state $\rho_{\rm mix}=\frac{1}{2^N} I$.
+\item[1.] The effect of this noise model is to push any state $\rho$ closer to the maximally mixed state $\rho_{\rm mix}=\frac{1}{2^N} I$, 
+where $N$ is the number of qubits of the system.
 \item[2.] The expectation value of a Pauli observable ($X, Y, Z$ or a combination $P$) over $\rho_{\rm mix}$ is zero.
 \item[3.] From 1. and 2., the more intense is the noise, the more $\braket{\rho|P|\rho}\to 0$
 \end{itemize}
+\end{tcolorbox}
 
 \end{frame}
 
@@ -342,14 +345,38 @@ case in which $\rho$ remains unchanged.
 \textcolor{carnelian}{The goal of quantum error mitigation is to use our knowledge about 
 the noise to try to mitigate its effect.} \pause
 
-Suppose we are interested in computing the expectation value $\braket{P}^0$ 
-of an observable $P$
-over the state we get applying the quantum circuit $\mathcal{U}$ to a state $\rho_0$:
-$$ \rho = \mathcal{U}(\rho_0).$$ \pause
-But our system is noisy! Thus what we get is a noisy expectation value $\braket{P}^0_{\rm noisy}$.
+Suppose we are interested in computing the expectation value $\braket{\mathcal{O}}^0$ 
+of an observable $\mathcal{O}$
+over the state we get applying the quantum circuit $\mathcal{C}^0$ to a state $\rho$. \pause
 
+But our system is noisy! Thus what we get is a noisy expectation value $\braket{\mathcal{O}}^0_{\rm noisy}$. \pause
 
+\begin{multicols}{2}
+\textbf{Clifford Data Regression algorithm}
+\begin{itemize}[noitemsep]
+\item[1.] We sample a set of circuits $\mathcal{C}^i_{\rm cdr}$, of the 
+same size of the target $\mathcal{C}^0$, but which are fast simulable.
+\item[2.] For each of these $C^i_{\rm cdr}$ we calculate both exact and 
+noisy expectation value.
+\item[3.] Make a scatter plot of exact versus noisy expectation values and fit 
+the points with a line.
+\item[4.] This line is actually a noise map, which can be used to map our $\mathcal{C}^0_{\rm noisy}$
+into $\mathcal{C}^0$.
+\item[5.] The obtained map can be used for any new circuit of the same size of $\mathcal{C}^0$.
+\end{itemize}
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/cdr.png}
+\end{figure}
+\end{multicols}
 
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge Let's code!
+\begin{figure}
+   \includegraphics[width=0.7\textwidth]{figures/hands_on.png}
+\end{figure}
 \end{frame}
 
 \end{document}
