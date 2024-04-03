@@ -1,0 +1,6 @@
+\frametitle{Full-stack deployment: RB and Bell inequality \hfill \faBook \,\, \href {https://arxiv.org/abs/2308.06313}{arXiv:2308.06313}}
+Examples of results executed on quantum hardware (single-qubit) after calibration with Qibo:
+  \begin{figure}
+    \includegraphics[height=4.8cm]{figures/standard_rb.pdf}
+    \includegraphics[height=4.8cm]{figures/bell_sweep_fig.pdf}
+  \end{figure}
