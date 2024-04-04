@@ -135,15 +135,14 @@ One clever trick we can implement using ancillas is the \textbf{phase kickback}.
 \item{1.} Take into account two qubits: a system qubit $x$ and an ancilla $y$.  \pause
 \item{2.} Suppose we prepare $x$ into a superposed state and $y$ into the excited state:
 $$ \ket{x}=H\ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}}, \qquad \ket{y}=\ket{1}. $$ \pause
-\item{3.} Let's consider now a controlled $Z$ operation. \pause
-\item{4.} What happen if we now apply the $CZ$ using $x$ as control and $y$
-as target? \pause
+\item{3.} Let's consider now a gate $G$ for which $\ket{1}$ is eigenvector: $G\ket{1}=\lambda_G \ket{1}$.
+\item{4.} What happens if we now apply a controlled-$G$ gate on $y$ using $x$ as control? \pause
 \item{5.} we could expect something happen on the target qubit! Not really: \pause
-$$ CZ \biggl( \frac{\ket{0}+\ket{1}}{\sqrt{2}} \otimes \ket{1} \biggr)  = 
-CZ \biggl( \frac{\ket{01}+\ket{11}}{\sqrt{2}} \biggr) = \pause
-\frac{\ket{01}+Z\ket{11}}{\sqrt{2}} = \pause
-\frac{\ket{01}-\ket{11}}{\sqrt{2}} = \pause
-\frac{\ket{0}-\ket{1}}{\sqrt{2}} \otimes \ket{1}.
+$$ CG \biggl( \frac{\ket{0}+\ket{1}}{\sqrt{2}} \otimes \ket{1} \biggr)  = 
+CG \biggl( \frac{\ket{01}+\ket{11}}{\sqrt{2}} \biggr) = \pause
+\frac{\ket{01}+G\ket{11}}{\sqrt{2}} = \pause
+\frac{\ket{01}+\lambda_G \ket{11}}{\sqrt{2}} = \pause
+\frac{\ket{0}+\lambda_G \ket{1}}{\sqrt{2}} \otimes \ket{1}.
 $$ \pause
 \item{6.} adding an extra $H$ to the control qubit, we will detect the state manipulation!
 \end{itemize}
@@ -153,6 +152,52 @@ $$ \pause
 This happens if the ancilla is prepared into a state which is eigenvector of the 
 controlled operation.
 \end{tcolorbox}
+
+\end{frame}
+
+\begin{frame}{Oracles}
+It can be useful to define the phase kickback using the concept of quantum \textbf{oracle}.
+
+\begin{itemize}[noitemsep]
+\item[1.] let's consider a system of qubits of state $\ket{x}$ and a set of extra qubits of state $\ket{y}$; \pause
+\item[2.] in reversible computation $x$ is called \textbf{input register} and $y$ \textbf{output register}. In this 
+course $x$ will always be composed of our system of qubits and $y$ will be ancillary qubits; \pause
+\item[3.] let's consider also a policy $f$, defined as a function $f:\{0,1\}^{N}\to\{0,1\}$. \pause
+\item[4.] this function is typically embedded into an 
+oracle $U_f$, a \textbf{black box} operator whose action on the system is:
+\begin{figure}
+   \includegraphics[width=0.35\textwidth]{figures/oracle.pdf}
+\end{figure}
+where the symbol $\oplus$ represents the ``addition modulo 2'' operation, equivalent to 
+the logical operation XOR: 
+$$ 1\oplus1=0, \qquad 0\oplus0=0, \qquad 0\oplus1=1, \qquad 0\oplus1=1. $$
+\pause
+\end{itemize}
+In other terms, the action of this oracle can be expressed as $U_f\ket{x}\ket{y}=\ket{x}\ket{y\oplus f(x)}.$
+\end{frame}
+
+\begin{frame}{A remarkable case: the phase flip}
+If we set $G$ to be a $Z$ gate, then the action of the phase kickback will be 
+a complete phase flip.
+$$ CZ \biggl( \frac{\ket{0}+\ket{1}}{\sqrt{2}} \otimes \ket{1} \biggr)  = 
+CZ \biggl( \frac{\ket{01}+\ket{11}}{\sqrt{2}} \biggr) = \pause
+\frac{\ket{01}+Z\ket{11}}{\sqrt{2}} = \pause
+\frac{\ket{01}- \ket{11}}{\sqrt{2}} = \pause
+\frac{\ket{0}- \ket{1}}{\sqrt{2}} \otimes \ket{1}.
+$$ 
+This will be incredibly useful when we will implement some more complex algorithm. \pause
+
+We can recall the oracle notation introduced in the previous slide defining $f(x)=x$
+and writing an oracle 
+action which reproduces the phase kickbak:
+$$ U_f \ket{x} \ket{1} = (-1)^{f(x)}\ket{x}\ket{1}. $$
+\pause
+The previous formula can be extended to the case of using multi-controlled operations 
+once the policy is rewritten so that:
+$$ f(x) = \begin{cases}
+1 \qquad \text{if} \qquad x=\ket{11\dots 1} \\
+0 \qquad \text{otherwise}.
+\end{cases} $$
 
 \end{frame}
 
@@ -168,25 +213,6 @@ Some of the most powerful and famous quantum computing algorithms make use of th
 \end{multicols}
 All of them are proved to outperform any classical algorithm, leading to a theoretical \textbf{quantum 
 advantage}!
-\end{frame}
-
-\begin{frame}{Oracles}
-It can be useful to define the phase kickback using the concept of quantum \textbf{oracle}.
-
-\begin{itemize}[noitemsep]
-\item[1.] Considering a system of qubits of state $\ket{x}$ and a set of extra qubits of state $\ket{y}$; \pause
-\item[2.] in reversible computation $x$ is called \textbf{input register} and $y$ \textbf{output register}. In this 
-course $x$ will always be composed of our system of qubits and $y$ will be ancillary qubits; \pause
-\item[3.] considering a function $f(x)$, acting on $y$, we define 
-oracle $U_f$, a \textbf{black box} operator whose action on $\ket{y}$ is:
-\begin{figure}
-   \includegraphics[width=0.4\textwidth]{figures/oracle.pdf}
-\end{figure}
-\pause
-\end{itemize}
-In the explicit case of the phase kickback, we can use $U_f$ to write the action: $U_f \ket{x}\ket{-} = (-1)^{x}\ket{x}\ket{-}.$\pause
-
-Extending it to a multi-dimensional case, we can write: $U_f \ket{x}\ket{-} = (-1)^{f(x)}\ket{x}\ket{-},$ whith $f(x) \in \{0,1\}$.
 \end{frame}
 
 \begin{frame}
