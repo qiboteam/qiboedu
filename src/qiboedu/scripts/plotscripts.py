@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+from qibo.config import raise_error
+
 from qiboedu.scripts.utils import generate_bitstring_combinations
 
 def visualize_states(counter, counter2=None):
@@ -139,3 +141,24 @@ def plot_amplitudes(state):
 
     plt.xticks(rotation=90)
     plt.show()
+
+
+def plot_density_matrix(state):
+    """
+    Plot the density matrix of a circuit result. The argument ``state`` have to 
+    be a ``qibo.state`` object obtained via density matrix simulation.
+    """
+
+    if (len(state.shape) == 1):
+        raise_error(TypeError, "The given state is not obtained via density matrix simulation.")
+
+    nqubits = int(np.log2(state.shape[0]))
+    bitstrings = generate_bitstring_combinations(nqubits)
+
+
+    plt.figure(figsize=(5, 5))
+    plt.imshow(np.abs(state), cmap="PRGn", vmin=0, vmax=1)
+    plt.xticks(ticks=np.arange(0,2**nqubits,1), labels=bitstrings)
+    plt.yticks(ticks=np.arange(0,2**nqubits,1), labels=bitstrings)
+    plt.colorbar()
+    plt.show()  
