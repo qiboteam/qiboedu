@@ -219,8 +219,8 @@ which can map points on the surface into points located within the Bloch sphere.
   \draw (0, 0) node[circle, fill, inner sep=1] (orig) {} -- (\r/2, \r/1.5) node[circle, fill=purple, inner sep=0.7, minimum size=4pt, label=right:$\rho$] (a) {};
 
   % Bloch vector
-  \draw (0, 0) node[circle, fill, inner sep=1] (orig) {} -- (0.3*\r/2, 0.3*\r/3) node[circle, fill, inner sep=0.7,minimum size=5pt] (aprime) {};
-  \draw (0, 0) node[circle, fill, inner sep=1] (orig) {} -- (0.3*\r/2, 0.3*\r/3) node[circle, fill=purple, inner sep=0.7, minimum size=4pt, label=right:$\rho'$] (aprime) {};
+  \draw (0, 0) node[circle, fill, inner sep=1] (orig) {} -- (0.3*\r/2, 0.3*\r/1.5) node[circle, fill, inner sep=0.7,minimum size=5pt] (aprime) {};
+  \draw (0, 0) node[circle, fill, inner sep=1] (orig) {} -- (0.3*\r/2, 0.3*\r/1.5) node[circle, fill=purple, inner sep=0.7, minimum size=4pt, label=right:$\rho'$] (aprime) {};
 
   \draw[purple, thick, ->] (a) to[out=110, in=20] ++(-1.5,0.2) to[out=200, in=60] ++(0.3,-0.3) to[out=240, in=100] ++(-0.5,-0.3) to[out=280, in=100] (aprime);
   \node[purple] at (-0.9,1) {$\mathcal{E}$};
@@ -233,6 +233,13 @@ which can map points on the surface into points located within the Bloch sphere.
   \draw[->] (orig) -- ++(-2*\r/5, -2*\r/3) node[below] (x1) {x};
   \draw[->] (orig) -- ++(1.2*\r, 0) node[right] (x2) {y};
   \draw[->] (orig) -- ++(0, 1.2*\r) node[above] (x3) {z};
+
+  \draw[dashed, purple] (a) -- (\r/2, -0.6);
+  \draw[purple] (aprime) -- (\r/6.2, -0.2);
+  \draw[dashed, purple] (orig) -- (\r/2, -0.6);
+  \draw[purple] (orig) -- (\r/6.2, -0.2);
+
+
 
 \end{tikzpicture}
 \end{center}
