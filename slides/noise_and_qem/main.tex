@@ -201,7 +201,7 @@ If $n=1$, then $\rho=\ket{\psi}\bra{\psi}$ and $\ket{\psi}$ is pure. \pause
 \textbf{About mixed states}
 
 {\footnotesize\faCircle\,\,} The evolution of a density matrix is described in terms 
-of superoperators $\rho' = \mathcal{E} (\rho)$, which, in the case of pure states 
+of superoperators (or \textit{channels}) $\rho' = \mathcal{E} (\rho)$, which, in the case of pure states 
 act like unitaries $ \rho' = \mathcal{E}^{\dagger} \rho \mathcal{E}. $ 
 
 {\footnotesize\faCircle\,\,} A mixed state of a single qubit can be visualized as a point within the surface
@@ -314,8 +314,8 @@ The density matrix of $\frac{1}{2} \bigl( \ket{0}\bra{0} + \ket{1}\bra{1} \bigr)
 \end{multicols}
 \end{frame}
 
-\begin{frame}{The Pauli representation of the noise}
-We can now define a superoperator $\mathcal{N}$, which represents the action of the 
+\begin{frame}{A dummy noise representation}
+We can now define a channel $\mathcal{N}$, which represents the action of the 
 noise on a state:
 $ \rho_{\rm noisy} = \mathcal{N}(\rho). $ \pause
 
@@ -334,12 +334,30 @@ where $\sum_k p_k \leq 1$, $P_k$ are the Paulis $\{X, Y, Z\}$
 \begin{tcolorbox}[colback=red!15, title=Effect of the noise when computing expectation values]
 \begin{itemize}[noitemsep]
 \item[1.] The effect of this noise model is to push any state $\rho$ closer to the maximally mixed state $\rho_{\rm mix}=\frac{1}{2^N} I$, 
-where $N$ is the number of qubits of the system.
-\item[2.] The expectation value of a Pauli observable ($X, Y, Z$ or a combination $P$) over $\rho_{\rm mix}$ is zero.
-\item[3.] From 1. and 2., the more intense is the noise, the more $\braket{\rho|P|\rho}\to 0$
+where $N$ is the number of qubits of the system and $I$ is the identity.
+\item[2.] The expectation value of a Pauli string ($X, Y, Z$ or combinations $P$) over $\rho_{\rm mix}$ zero. In fact, since
+$\text{E}[P] = \text{Tr}[P]=0$:
+$$E_{\rho_{\rm mix}}[P]=\text{Tr}[P\rho_{\rm mix}]=\frac{1}{2^N}\text{Tr}[P\,I] = \frac{1}{2^N}\text{Tr}[P] = 0.$$
 \end{itemize}
 \end{tcolorbox}
+\end{frame}
 
+\begin{frame}{Reality is more complex}
+The Pauli noise representation is good enough as starting point, but it assumes simplifications: \pause
+\begin{itemize}[noitemsep]
+\item[1.] with this model we assume the noise affects single qubits independently. In practice, it 
+acts like single-qubit gates. \textcolor{carnelian}{In real devices noise can be 
+correlated across multiple qubits}; \pause
+\item[2.] we assume the noise is ``Markovian'', namely, the noise at a certain time $t$
+of the execution is independent on the state of the system at time $t-\delta t$. 
+\textcolor{carnelian}{Many quantum systems exhibit non-Markovian dynamics}; \pause
+\item[3.] Pauli errors act on the system as discrete transformations. 
+\textcolor{carnelian}{Actual quantum systems may experience continuous errors}. \pause
+\end{itemize}
+Several more complex noise models exist and many of them are implemented in \texttt{Qibo}: \pause
+\begin{figure}
+    \includegraphics[width=1\textwidth]{figures/qibo_noise_channels.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}{How can we face this problem?}
@@ -361,16 +379,19 @@ But our system is noisy! Thus what we get is a noisy expectation value $\braket{
 \begin{multicols}{2}
 \textbf{Clifford Data Regression algorithm}
 \begin{itemize}[noitemsep]
-\item[1.] We sample a set of circuits $\mathcal{C}^i_{\rm cdr}$, of the 
-same size of the target $\mathcal{C}^0$, but which are fast simulable.
-\item[2.] For each of these $C^i_{\rm cdr}$ we calculate both exact and 
-noisy expectation value.
+\item[1.] Sample a set of circuits $\mathcal{C}^i_{\rm cdr}$, of the 
+same size of the target $\mathcal{C}^0$, but fast to simulate\only<4->{\footnote{We 
+generate these circuits by randomly replacing some gates of the circuit with Clifford gates. 
+  When dealing with rotations, one can replace the angles with multiples of $\pi/2$.
+  For more info on Clifford simulators: \href{https://arxiv.org/abs/quant-ph/0406196}{\faBook\,\,arXiv:quant-ph/0406196.}}}.
+\item[2.] For each $C^i_{\rm cdr}$ calculate exact and noisy exp value.
 \item[3.] Make a scatter plot of exact versus noisy expectation values and fit 
 the points with a line.
 \item[4.] This line is actually a noise map, which can be used to map our $\mathcal{C}^0_{\rm noisy}$
-into $\mathcal{C}^0$.
+into a mitigated $\mathcal{C}^0_{\rm mit}$.
 \item[5.] The obtained map can be used for any new circuit of the same size of $\mathcal{C}^0$.
 \end{itemize}
+\textcolor{carnelian}{This method assumes the noise is affecting the gates!}
 \begin{figure}
     \includegraphics[width=0.5\textwidth]{figures/cdr.png}
 \end{figure}
