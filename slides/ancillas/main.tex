@@ -135,7 +135,7 @@ One clever trick we can implement using ancillas is the \textbf{phase kickback}.
 \item{1.} Take into account two qubits: a system qubit $x$ and an ancilla $y$.  \pause
 \item{2.} Suppose we prepare $x$ into a superposed state and $y$ into the excited state:
 $$ \ket{x}=H\ket{0} = \frac{\ket{0}+\ket{1}}{\sqrt{2}}, \qquad \ket{y}=\ket{1}. $$ \pause
-\item{3.} Let's consider now a gate $G$ for which $\ket{1}$ is eigenvector: $G\ket{1}=\lambda_G \ket{1}$.
+\item{3.} Let's consider now a gate $G$ for which $\ket{1}$ is eigenvector: $G\ket{1}=\lambda_G \ket{1}$. \pause
 \item{4.} What happens if we now apply a controlled-$G$ gate on $y$ using $x$ as control? \pause
 \item{5.} we could expect something happen on the target qubit! Not really: \pause
 $$ CG \biggl( \frac{\ket{0}+\ket{1}}{\sqrt{2}} \otimes \ket{1} \biggr)  = 
@@ -170,7 +170,7 @@ oracle $U_f$, a \textbf{black box} operator whose action on the system is:
 \end{figure}
 where the symbol $\oplus$ represents the ``addition modulo 2'' operation, equivalent to 
 the logical operation XOR: 
-$$ 1\oplus1=0, \qquad 0\oplus0=0, \qquad 0\oplus1=1, \qquad 0\oplus1=1. $$
+$$ 1\oplus1=0, \qquad 0\oplus0=0, \qquad 0\oplus1=1, \qquad 1\oplus0=1. $$
 \pause
 \end{itemize}
 In other terms, the action of this oracle can be expressed as $U_f\ket{x}\ket{y}=\ket{x}\ket{y\oplus f(x)}.$
@@ -187,10 +187,10 @@ CZ \biggl( \frac{\ket{01}+\ket{11}}{\sqrt{2}} \biggr) = \pause
 $$ 
 This will be incredibly useful when we will implement some more complex algorithm. \pause
 
-We can recall the oracle notation introduced in the previous slide defining $f(x)=x$
-and writing an oracle 
-action which reproduces the phase kickbak:
-$$ U_f \ket{x} \ket{1} = (-1)^{f(x)}\ket{x}\ket{1}. $$
+We can recall the oracle notation introduced in the previous slide considering slightly different setup. 
+We can write our policy as $f(x)=x$ and prepare the ancilla into the state $\ket{-}$. Then,
+the action of $U_f$ will be:
+$$ U_f \ket{x} \ket{-} = (-1)^{f(x)}\ket{x}\ket{-}. $$
 \pause
 The previous formula can be extended to the case of using multi-controlled operations 
 once the policy is rewritten so that:
