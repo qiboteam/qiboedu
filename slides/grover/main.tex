@@ -232,7 +232,7 @@ In this framework, the target solution $\omega$ is represented by one of the com
 
 The first step of the algorithm is the state preparation into the following superposed state:
 \begin{multicols}{2}
-$$ H^{\otimes N} \ket{0}_N \otimes HX \ket{0} = \biggl[ \frac{1}{M}\sum_{i=1}^{M} \ket{x_i} \biggr] \otimes \ket{-} = \ket{s}\otimes \ket{-}. $$
+$$ H^{\otimes N} \ket{0}_N \otimes HX \ket{0} = \biggl[ \frac{1}{\sqrt{M}}\sum_{i=1}^{M} \ket{x_i} \biggr] \otimes \ket{-} = \ket{s}\otimes \ket{-}. $$
 \textcolor{carnelian}{We move the system state from the computational zero
 to the maximally superposed state $\ket{s}$.}
 
@@ -281,7 +281,7 @@ detect it among the $M$ components of $\ket{x}$. \pause
 To this purpose, we introduce the diffusion operator
 $$ U_s =  2 \ket{s}\bra{s} - I, $$
 whose action is a reflection of the system with respect to the state:
-$$ \ket{s} = \frac{1}{2^{M}}\sum_{i=1}^{M} \ket{x_i}. $$ \pause
+$$ \ket{s} = \frac{1}{\sqrt{M}}\sum_{i=1}^{M} \ket{x_i}. $$ \pause
 
 Since the amplitude of $\ket{\omega}$ was flipped by $U_f$, the action of $U_s$
 will produce an increasing of $\ket{\omega}$ and, consequently, a decreasing of the

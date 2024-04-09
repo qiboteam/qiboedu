@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -13,7 +16,6 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\providecommand\babel@aux[2]{}
 \@nameuse{bbl@beforestart}
 \babel@aux{english}{}
 \@writefile{nav}{\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}}
@@ -41,4 +43,3 @@
 \@writefile{nav}{\headcommand {\beamer@sectionpages {1}{20}}}
 \@writefile{nav}{\headcommand {\beamer@documentpages {20}}}
 \@writefile{nav}{\headcommand {\gdef \inserttotalframenumber {10}}}
-\gdef \@abspage@last{20}
