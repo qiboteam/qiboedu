@@ -7,7 +7,7 @@
 \usepackage{booktabs}
 \usepackage{braket}
 \usepackage[scale=2]{ccicons}
-\usepackage{amsfonts} 
+\usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage[english]{babel}
 \colorlet{col1}{teal}
@@ -71,21 +71,21 @@
 
 \usepackage{listings}
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
+    backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
     keywordstyle=\color{codepurple},
     numberstyle=\tiny\color{codepurple},
     stringstyle=\color{magenta},
     basicstyle=\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
+    showtabs=false,
     tabsize=2
 }
 
@@ -120,8 +120,8 @@ $^\dagger$ PhD candidate, University of Milan, Italy and CERN, Switzerland.}
 \end{frame}
 
 \begin{frame}{Motivation}
-The Grover algorithm is powerful when searching an item 
-among an unordered set of candidates. 
+The Grover algorithm is powerful when searching an item
+among an unordered set of candidates.
 
 \begin{multicols}{3}
 Extract the jack of clubs from a Poker deck
@@ -134,7 +134,7 @@ Find a passcode composed of 10 numbers
     \includegraphics[width=.25\textwidth]{figures/pwd.png}
 \end{figure}
 
-Find an antidote to the Cobra poison, exploring $10^{20}$ 
+Find an antidote to the Cobra poison, exploring $10^{20}$
 molecules
 \begin{figure}
     \includegraphics[width=.25\textwidth]{figures/cobra.png}
@@ -171,7 +171,7 @@ If we consider a time cost of $\delta=10^{-8}$ seconds for any algorithmic call 
 \end{figure}
 \end{multicols}
 \begin{tcolorbox}[colback=red!15]
-The Grover algorithm solves this kind of search with a number of algorithmic calls 
+The Grover algorithm solves this kind of search with a number of algorithmic calls
 proportional to $\sqrt{N}$, where $N$ is the dimension of the search space.
 \end{tcolorbox}
 \end{frame}
@@ -201,30 +201,30 @@ In terms of quantum circuit:
 \end{frame}
 
 \begin{frame}{step 1 and 2: the state preparation}
-We consider a set of $M=2^{N}$ unordered items and we encode them into the state of 
-an $N$ qubits system: 
-$$ 
+We consider a set of $M=2^{N}$ unordered items and we encode them into the state of
+an $N$ qubits system:
+$$
 \begin{bmatrix}
 \text{item}_1 \\
 \text{item}_2 \\
 \dots \\
 \text{item}_{2^N}
-\end{bmatrix} \qquad \to \qquad 
+\end{bmatrix} \qquad \to \qquad
 \ket{\psi} = \begin{bmatrix}
 \psi_{00 \dots 0} \\
 \psi_{00 \dots 1}  \\
 \dots \\
 \psi_{11 \dots 1}
-\end{bmatrix}  
-\equiv 
+\end{bmatrix}
+\equiv
 \begin{bmatrix}
 x_1 \\
 x_2  \\
 \dots \\
 x_M
-\end{bmatrix} . 
+\end{bmatrix} .
 $$
-\pause 
+\pause
 
 We make use of an ancilla qubit too. The state of the system is then: $\ket{x}_N \ket{y}$. \pause
 
@@ -246,13 +246,13 @@ to the maximally superposed state $\ket{s}$.}
 
 \begin{frame}{Step 3: the oracle $U_f$}
 We consider now a function $f:\{0,1\}^N \to \{0,1\}$ which can detect the correct solution $\ket{\omega}$:
-$$ 
+$$
 f(x) = \begin{cases}
 1 \qquad \text{if\,\,} x=\omega, \\
 0 \qquad \text{otherwise}.
 \end{cases} $$ \pause
-This function is typically embedded into a quantum oracle $U_f$ which is able to 
-recognize the solution for us. It's important to underline that even if the oracle 
+This function is typically embedded into a quantum oracle $U_f$ which is able to
+recognize the solution for us. It's important to underline that even if the oracle
 can detect the solution, may don't know it's exact value. \pause
 
 \textcolor{carnelian}{The oracle marks the solution (one of the amplitudes) by flipping its sign thanks to
@@ -260,7 +260,7 @@ a phase-kickback procedure.} \pause
 
 
 \begin{multicols}{2}
-In practice, this can be done by setting up a multi-controlled operation 
+In practice, this can be done by setting up a multi-controlled operation
 which applies a phase kickback only if the control state is $\ket{\omega}$.
 $$ U_f \ket{x}\ket{-} = (-1)^{f(x)}\ket{x}\ket{-}. $$
 Its action on $\ket{\omega}$ is:
@@ -275,21 +275,21 @@ where $f(x)$ follows the rule exposed before.
 \end{frame}
 
 \begin{frame}{Step 4: the diffusion operator $U_s$}
-Now $\ket{\omega}$ is marked. We need to amplify its amplitude so that we can 
+Now $\ket{\omega}$ is marked. We need to amplify its amplitude so that we can
 detect it among the $M$ components of $\ket{x}$. \pause
 
 To this purpose, we introduce the diffusion operator
 $$ U_s =  2 \ket{s}\bra{s} - I, $$
 whose action is a reflection of the system with respect to the state:
-$$ \ket{s} = \frac{1}{2^{M}}\sum_{i=1}^{M} \ket{x_i}. $$ \pause 
+$$ \ket{s} = \frac{1}{2^{M}}\sum_{i=1}^{M} \ket{x_i}. $$ \pause
 
-Since the amplitude of $\ket{\omega}$ was flipped by $U_f$, the action of $U_s$ 
-will produce an increasing of $\ket{\omega}$ and, consequently, a decreasing of the 
+Since the amplitude of $\ket{\omega}$ was flipped by $U_f$, the action of $U_s$
+will produce an increasing of $\ket{\omega}$ and, consequently, a decreasing of the
 other components. \pause
 
 \begin{multicols}{2}
 \textit{\\}
-$U_s$ is also known as \textcolor{carnelian}{``inversion by the mean"}, in fact, it can be shown 
+$U_s$ is also known as \textcolor{carnelian}{``inversion by the mean"}, in fact, it can be shown
 it implements an inversion w.r.t. the mean value of the amplitudes of $\ket{x}$.
 \begin{figure}
    \includegraphics[width=0.5\textwidth]{figures/state3.png}
@@ -310,7 +310,7 @@ We are iteratively moving the system state through the target $\ket{\omega}$.
 As we can deduce from the previous slide, there exist an \textbf{optimal number} of Grover iterations fixed by geometry.
 
 \begin{itemize}
-\item[1.] we can decompose $\ket{x}$ into the \textit{winning} and the \textit{losing} 
+\item[1.] we can decompose $\ket{x}$ into the \textit{winning} and the \textit{losing}
 components $\ket{s} = \sqrt{\frac{1}{M}} \ket{\omega} + \sqrt{\frac{M-1}{M}} \ket{\omega_{\bot}}.$
 \item[2.]  The same vector can be
 defined in terms of the angle in the plane: $\,\ket{s} = \sin \theta \ket{\omega} + cos \theta \ket{\omega_{\bot}}.$
@@ -321,9 +321,9 @@ defined in terms of the angle in the plane: $\,\ket{s} = \sin \theta \ket{\omega
 $\theta \approx 1/\sqrt{M}. $
 \item[4.] the action of $U_s U_f$ on $\ket{x}$ is equal to a rotation of $2\theta$ of the vector.
 \item[5.] after $k$ iteration of Grover, the angle has become: $\alpha = (2k + 1)\,\theta$, and, to maximize $\sin \alpha$:
-$$ \alpha = \frac{\pi}{2} \quad \to \quad k = \frac{\pi}{4\theta} - \frac{1}{2} = \frac{\pi}{4} \sqrt{N} - \frac{1}{2}. $$
-\item[6.] from 5. we need to get an integer, since we are talking about iterations. 
-Commonly $\theta \approx \frac{\pi}{4} \sqrt{M}.$ 
+$$ \alpha = \frac{\pi}{2} \quad \to \quad k = \frac{\pi}{4\theta} - \frac{1}{2} = \frac{\pi}{4} \sqrt{M} - \frac{1}{2}. $$
+\item[6.] from 5. we need to get an integer, since we are talking about iterations.
+Commonly $\theta \approx \frac{\pi}{4} \sqrt{M}.$
 \end{itemize}
 \begin{figure}
    \includegraphics[width=0.5\textwidth]{figures/thetas.png}
