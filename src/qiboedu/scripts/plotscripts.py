@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+from qibo.config import raise_error
+
 from qiboedu.scripts.utils import generate_bitstring_combinations
 
 def visualize_states(counter, counter2=None):
@@ -138,4 +140,54 @@ def plot_amplitudes(state):
         ax.bar(bitstring[i], np.real(amp), color='#C194D8', edgecolor="black")
 
     plt.xticks(rotation=90)
+    plt.show()
+
+
+def plot_density_matrix(state):
+    """
+    Plot the density matrix of a circuit result. The argument ``state`` have to 
+    be a ``qibo.state`` object obtained via density matrix simulation.
+    """
+
+    if (len(state.shape) == 1):
+        raise_error(TypeError, "The given state is not obtained via density matrix simulation.")
+
+    nqubits = int(np.log2(state.shape[0]))
+    bitstrings = generate_bitstring_combinations(nqubits)
+
+
+    plt.figure(figsize=(5, 5))
+    plt.imshow(np.abs(state), cmap="PRGn", vmin=0, vmax=1)
+    plt.xticks(ticks=np.arange(0,2**nqubits,1), labels=bitstrings)
+    plt.yticks(ticks=np.arange(0,2**nqubits,1), labels=bitstrings)
+    plt.colorbar()
+    plt.show()  
+
+
+def plot_vqe_states(state, state2=None):
+    """
+    Plot `state` and `state2` if provided. 
+    # TODO: merge this function into one of the others.
+    """
+    n = int(np.log2(len(state)))
+    bitstrings = []
+    for i in range(2**n):
+        bitstrings.append(format(i, f"0{n}b"))
+    for i, amp in enumerate(state):
+        if i == 0:
+            plt.bar(bitstrings[i], np.abs(amp)**2, color='#C194D8', alpha=0.7, edgecolor="black", label="Ground state")
+        else:
+            plt.bar(bitstrings[i], np.abs(amp)**2, color='#C194D8', alpha=0.7, edgecolor="black")
+    if state2 is not None:     
+        for i, amp in enumerate(state2):
+            if i == 0:
+                plt.bar(bitstrings[i], np.abs(amp)**2, color='black', alpha=1, edgecolor="black", hatch="\\\\", facecolor="none", label="VQE approximation")
+            else:
+                plt.bar(bitstrings[i], np.abs(amp)**2, color='black', alpha=1, edgecolor="black", hatch="\\\\", facecolor="none")
+                
+    plt.xticks(rotation=90)
+    plt.xlabel("Components")
+    plt.ylabel("Probabilities")
+    plt.title("State representation")
+    plt.legend()
     plt.show()
