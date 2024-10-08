@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
 
 import numpy as np
 
@@ -7,32 +6,11 @@ from qibo.config import raise_error
 
 from qiboedu.scripts.utils import generate_bitstring_combinations
 
-def hex_to_rgb(hex_color):
-    """Convert hex color to RGB tuple."""
-    return mcolors.hex2color(hex_color)
+def interpolate_cmap(palette_name, n):
+    """Interpolating a colormap with N values."""
+    cmap = plt.get_cmap(palette_name)
+    return [cmap(i / (n - 1)) for i in range(n)]
 
-def rgb_to_hex(rgb_color):
-    """Convert RGB tuple to hex color."""
-    return mcolors.to_hex(rgb_color)
-
-def interpolate_colors(hex_start, hex_end, n_colors):
-    """
-    Generate a list of colors between two hex colors.
-
-    Parameters:
-    hex_start (str): The starting hex color.
-    hex_end (str): The ending hex color.
-    n_colors (int): The number of colors to generate, including the start and end colors.
-
-    Returns:
-    list: A list of hex colors.
-    """
-    rgb_start = np.array(hex_to_rgb(hex_start))
-    rgb_end = np.array(hex_to_rgb(hex_end))
-    
-    # Generate interpolated colors
-    colors = [rgb_to_hex(rgb_start + (rgb_end - rgb_start) * t) for t in np.linspace(0, 1, n_colors)]
-    return colors
 
 def visualize_states(counter, counter2=None):
     """Plot state's frequencies."""
@@ -224,8 +202,15 @@ def plot_vqe_states(state, state2=None):
 
 def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), experiment="bell64", plot_projection=None, img_width=0.5, legendloc=1, savetitle=None):
     """"""
-    colors = interpolate_colors(hex_start="#EDC830", hex_end="#783CC4", n_colors=5)
-    colors = ["#7B3294", "#B276D3","#D6604D", "#F4A582", "#008B8B"]
+    colors = [
+        "#CC79A7",
+        "#D55E00",
+        "#0072B2",
+        "#F0E442",
+        "#009E73",
+        "#56B4E9",
+        "#E69F00",
+    ]
 
     if experiment == "bell64":
         if plot_projection is None:
@@ -240,6 +225,12 @@ def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), 
         classical_bound = 0
         ylabel = r"$Q^W$" 
         polar_ylims = [0, 0.3]
+    elif experiment == "chsh":
+        colors.extend(["#67E1F0", "#67F09D"])
+        yfill_bounds = (2, 3)
+        classical_bound = 2
+        ylabel = r"$Q^S$"
+        polar_ylims = [0, 3]
 
 
     _, ax = plt.subplots(figsize=(10 * img_width, 10 * img_width * 5 / 8), subplot_kw={"projection": plot_projection})
