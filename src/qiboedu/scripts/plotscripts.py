@@ -234,10 +234,13 @@ def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), 
             yfill_bounds = (1, 1.6)
         classical_bound = 1
         ylabel = r"$Q^B$"
+        polar_ylims = [0, 1.6]
     elif experiment == "bell-wigner":
         yfill_bounds = (0.2, 0)
         classical_bound = 0
         ylabel = r"$Q^W$" 
+        polar_ylims = [0, 0.3]
+
 
     _, ax = plt.subplots(figsize=(10 * img_width, 10 * img_width * 5 / 8), subplot_kw={"projection": plot_projection})
     labels=['$\\theta_{ab}/\pi = 0$'] + ['$\\theta_{ab}/\pi = %d/%d$' % (i_ab, ab_steps) for i_ab in range(1, ab_steps)] + ['$\\theta_{ab}/\pi = 1$']
@@ -271,8 +274,12 @@ def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), 
         ax.set_theta_zero_location("N")
         ax.set_thetamin(0)
         ax.set_thetamax(180)
-        ax.set_ylim([0, 1.6])
+        ax.set_ylim(polar_ylims)
+        ax.yaxis.set_tick_params(labelsize=16)
         ax.legend(bbox_to_anchor=(0.9, 1.0), fontsize=14)
+
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
 
     if savetitle is not None:
         plt.savefig(f"{savetitle}.pdf", bbox_inches="tight")
