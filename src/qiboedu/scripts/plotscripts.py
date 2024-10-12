@@ -1,9 +1,16 @@
 import matplotlib.pyplot as plt
+
 import numpy as np
 
 from qibo.config import raise_error
 
 from qiboedu.scripts.utils import generate_bitstring_combinations
+
+def interpolate_cmap(palette_name, n):
+    """Interpolating a colormap with N values."""
+    cmap = plt.get_cmap(palette_name)
+    return [cmap(i / (n - 1)) for i in range(n)]
+
 
 def visualize_states(counter, counter2=None):
     """Plot state's frequencies."""
@@ -190,4 +197,77 @@ def plot_vqe_states(state, state2=None):
     plt.ylabel("Probabilities")
     plt.title("State representation")
     plt.legend()
+    plt.show()
+
+
+def plot_bell_inequalities(experiment, Q_values, ac_steps, param_steps, param_label, y_bounds, plot_projection=None, img_width=1, legendloc=1, savetitle=None):
+    """
+    Plot the Bell inequalities' Q values and their corresponding classical bound. See details in the Bell-related notebooks.
+    """
+    colors = [
+        "#CC79A7",
+        "#D55E00",
+        "#0072B2",
+        "#F0E442",
+        "#009E73",
+        "#56B4E9",
+        "#E69F00",
+    ]
+
+    if experiment == "bell64":
+        if plot_projection is None:
+            yfill_bounds = (2, 1)
+        elif plot_projection == "polar":
+            yfill_bounds = (1, 1.6)
+        classical_bound = 1
+        ylabel = r"$Q^B$"
+    elif experiment == "bell-wigner":
+        yfill_bounds = (0.2, 0)
+        classical_bound = 0
+        ylabel = r"$Q^W$" 
+    elif experiment == "chsh":
+        colors.extend(["#67E1F0", "#67F09D"])
+        yfill_bounds = (2, 3)
+        classical_bound = 2
+        ylabel = r"$Q^S$"
+
+    _, ax = plt.subplots(figsize=(10 * img_width, 10 * img_width * 5 / 8), subplot_kw={"projection": plot_projection})
+    labels=[f'${param_label}/\pi = 0$'] + [f'${param_label}/\pi = {i_param}/{param_steps}$' for i_param in range(1, param_steps)] + [f'${param_label}/\pi = 1$']
+
+    if plot_projection is None:
+        th = [(i / ac_steps) for i in range(ac_steps + 1)]
+    elif plot_projection == "polar":
+        th = [(i * np.pi/ac_steps) for i in range(ac_steps+1)]
+    else:
+        raise ValueError(f"plot_projection {plot_projection} is not supported here, please use None or polar.")
+    
+    for i_param in range(param_steps+1):
+        ax.plot(th, Q_values[i_param][:len(th)], color=colors[i_param], label=labels[i_param], lw=2, alpha=0.8)
+    
+    # fill between constraints
+    ax.fill_between(x=th, y1=yfill_bounds[0], y2=yfill_bounds[1], color="0.5", alpha=0.3)
+
+    if plot_projection is None:
+        ax.hlines(classical_bound, min(th), max(th), color="black", ls="--", label="Classic bound", lw=1.5)
+        plt.xlabel('$\\theta_{ac} / \pi$', fontsize=16)
+        plt.ylabel(ylabel, fontsize=16)
+        plt.ylim(y_bounds[0], y_bounds[1])
+        plt.grid(True)
+        plt.legend(loc=legendloc, fontsize=16, ncols=3)
+    
+    elif plot_projection == "polar":
+        ax.set_xticks([(i*np.pi/6) for i in range(7)], labels=['0'] + ['$%d\\pi/6$    ' % i for i in range(1, 6)] + ['$\\pi$'])
+        ax.set_theta_zero_location("N")
+        ax.set_thetamin(0)
+        ax.set_thetamax(180)
+        ax.set_ylim(y_bounds[0], y_bounds[1])
+        ax.yaxis.set_tick_params(labelsize=16)
+        ax.legend(bbox_to_anchor=(0.9, 1.0), fontsize=14)
+
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
+
+    if savetitle is not None:
+        plt.savefig(f"{savetitle}.pdf", bbox_inches="tight")
+
     plt.show()
