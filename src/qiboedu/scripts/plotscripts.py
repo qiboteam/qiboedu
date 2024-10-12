@@ -200,8 +200,10 @@ def plot_vqe_states(state, state2=None):
     plt.show()
 
 
-def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), experiment="bell64", plot_projection=None, img_width=0.5, legendloc=1, savetitle=None):
-    """"""
+def plot_bell_inequalities(experiment, Q_values, ac_steps, param_steps, param_label, y_bounds, plot_projection=None, img_width=1, legendloc=1, savetitle=None):
+    """
+    Plot the Bell inequalities' Q values and their corresponding classical bound. See details in the Bell-related notebooks.
+    """
     colors = [
         "#CC79A7",
         "#D55E00",
@@ -219,38 +221,31 @@ def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), 
             yfill_bounds = (1, 1.6)
         classical_bound = 1
         ylabel = r"$Q^B$"
-        polar_ylims = [0, 1.6]
     elif experiment == "bell-wigner":
         yfill_bounds = (0.2, 0)
         classical_bound = 0
         ylabel = r"$Q^W$" 
-        polar_ylims = [0, 0.3]
     elif experiment == "chsh":
         colors.extend(["#67E1F0", "#67F09D"])
         yfill_bounds = (2, 3)
         classical_bound = 2
         ylabel = r"$Q^S$"
-        polar_ylims = [0, 3]
-
 
     _, ax = plt.subplots(figsize=(10 * img_width, 10 * img_width * 5 / 8), subplot_kw={"projection": plot_projection})
-    labels=['$\\theta_{ab}/\pi = 0$'] + ['$\\theta_{ab}/\pi = %d/%d$' % (i_ab, ab_steps) for i_ab in range(1, ab_steps)] + ['$\\theta_{ab}/\pi = 1$']
+    labels=[f'${param_label}/\pi = 0$'] + [f'${param_label}/\pi = {i_param}/{param_steps}$' for i_param in range(1, param_steps)] + [f'${param_label}/\pi = 1$']
 
     if plot_projection is None:
         th = [(i / ac_steps) for i in range(ac_steps + 1)]
-
     elif plot_projection == "polar":
         th = [(i * np.pi/ac_steps) for i in range(ac_steps+1)]
-
     else:
         raise ValueError(f"plot_projection {plot_projection} is not supported here, please use None or polar.")
     
-    for i_ab in range(ab_steps+1):
-        ax.plot(th, Q_values[i_ab][:len(th)], color=colors[i_ab], label=labels[i_ab], lw=2, alpha=0.8)
+    for i_param in range(param_steps+1):
+        ax.plot(th, Q_values[i_param][:len(th)], color=colors[i_param], label=labels[i_param], lw=2, alpha=0.8)
     
     # fill between constraints
     ax.fill_between(x=th, y1=yfill_bounds[0], y2=yfill_bounds[1], color="0.5", alpha=0.3)
-
 
     if plot_projection is None:
         ax.hlines(classical_bound, min(th), max(th), color="black", ls="--", label="Classic bound", lw=1.5)
@@ -265,7 +260,7 @@ def plot_bell_inequalities(Q_values, ac_steps, ab_steps, y_bounds=(None, None), 
         ax.set_theta_zero_location("N")
         ax.set_thetamin(0)
         ax.set_thetamax(180)
-        ax.set_ylim(polar_ylims)
+        ax.set_ylim(y_bounds[0], y_bounds[1])
         ax.yaxis.set_tick_params(labelsize=16)
         ax.legend(bbox_to_anchor=(0.9, 1.0), fontsize=14)
 
