@@ -1,5 +1,9 @@
 # qiboedu
 Collection of material for quantum computing educational activities using Qibo.
+Feel free to explore all the lectures provided by our special teacher: the Qibo mangoose!
+
+![qibo_teaching](https://github.com/user-attachments/assets/3a6e2b31-5a4b-4e0c-8f05-ce15d68ea971)
+
 
 #### List lectures
 
