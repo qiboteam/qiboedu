@@ -17,9 +17,7 @@ Feel free to explore all the lectures provided by our special teacher: the Qibo 
 | Lecture 6   | Simulating quantum noise        |
 | Lecture 7   | Mitigating the noise            |
 | Lecture 8   | Variational Quantum Eigensolver |
-| Lecture 9.1 | The Bell-Wigner                 |
-| Lecture 9.2 | The Bell inequality of '64      |
-| Lecture 9.3 | The CHSH inequality             |
+| Bell inequalities | Exploring multiple Bell-like inequalities |
 
 
 ## Setup
