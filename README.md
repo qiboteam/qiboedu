@@ -1,5 +1,24 @@
 # qiboedu
 Collection of material for quantum computing educational activities using Qibo.
+Feel free to explore all the lectures provided by our special teacher: the Qibo mangoose!
+
+![qibo_teaching](https://github.com/user-attachments/assets/3a6e2b31-5a4b-4e0c-8f05-ce15d68ea971)
+
+
+#### List lectures
+
+| Lecture     |  Topic                          |
+|-------------|---------------------------------|
+| Lecture 1   | Introduction to `Qibo`          |
+| Lecture 2   | The phase kickback trick        |
+| Lecture 3   | The Deutsch-Josza algorithm     |
+| Lecture 4   | The Grover search algorithm     |
+| Lecture 5   | Opening the Grover black-box    |
+| Lecture 6   | Simulating quantum noise        |
+| Lecture 7   | Mitigating the noise            |
+| Lecture 8   | Variational Quantum Eigensolver |
+| Bell inequalities | Exploring multiple Bell-like inequalities |
+
 
 ## Setup
 Given you have [poetry](https://python-poetry.org/docs/) installed:
