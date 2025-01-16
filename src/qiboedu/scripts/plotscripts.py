@@ -199,6 +199,18 @@ def plot_vqe_states(state, state2=None):
     plt.legend()
     plt.show()
 
+def plot_target(x, labels, predictions=None):
+    """Plot target QML function and eventual predictions."""
+    _, ax = plt.subplots(figsize=(5, 5 * 6/8))
+    ax.set_title(r'$u$-quark PDF')
+    ax.set_xlabel('x')
+    ax.set_ylabel(r'$u f(x)$')
+    plt.plot(x, labels, color="black", ls="--", lw=1.5, label="Labels", marker=".", markersize=10, alpha=0.7)
+    if predictions is not None:
+        plt.plot(x, predictions, color="#C194D8", ls="-", lw=1.5, label="Predictions", marker=".", markersize=10, alpha=0.7)
+    ax.set_xscale("log")
+    plt.legend()
+    plt.show()
 
 def plot_bell_inequalities(experiment, Q_values, ac_steps, param_steps, param_label, y_bounds, plot_projection=None, img_width=1, legendloc=1, savetitle=None):
     """
