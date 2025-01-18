@@ -10,24 +10,25 @@ Feel free to explore all the lectures provided by our special teacher: the Qibo 
 The lectures are divided into macro-groups, corresponding to similar or related topics.
 In the following table, we give a brief description of the `Qiboedu` contents.
 
-| Lecture                 | Topic                           |
-|-------------------------|---------------------------------|
-| **Introduction**        |                                 |
-| 1_qibo_basics           | First steps with Qibo           |
-| **Query algorithms**    |                                 |
-| 1_phase_kickback        | The phase kickback trick        |
-| 2_deutsch_josza         | The Deutsch-Josza algorithm     |
-| 3_grover                | The Grover search algorithm     |
-| 4_grover_details        | Opening the Grover black-box    |
-| **Entanglement tests**  |                                 |
-| 1_Bell-Wigner           | Simulate Bell-Wigner inequality |
-| 2_Bell64                | Simulate Bell 1964 inequality   |
-| 2_CHSH                  | Simulate CHSH inequality        |
-| **Quantum noise**       |                                 |
-| 1_simulating_noise      | Simulating quantum noise        |
-| 2_error_mitigation      | Mitigating the noise            |
-| **Quantum Machine Learning** |                            |
-| 1_vqe                   | Variational Quantum Eigensolver |
+| Lecture                      | Topic                           |
+|------------------------------|---------------------------------|
+| **Introduction**             |                                 |
+| 1_qibo_basics                | First steps with Qibo           |
+| **Query algorithms**         |                                 |
+| 1_phase_kickback             | The phase kickback trick        |
+| 2_deutsch_josza              | The Deutsch-Josza algorithm     |
+| 3_grover                     | The Grover search algorithm     |
+| 4_grover_details             | Opening the Grover black-box    |
+| **Entanglement tests**       |                                 |
+| 1_Bell-Wigner                | Simulate Bell-Wigner inequality |
+| 2_Bell64                     | Simulate Bell 1964 inequality   |
+| 2_CHSH                       | Simulate CHSH inequality        |
+| **Quantum noise**            |                                 |
+| 1_simulating_noise           | Simulating quantum noise        |
+| 2_error_mitigation           | Mitigating the noise            |
+| **Quantum Machine Learning** |                                           |
+| 1_vqe                        | Variational Quantum Eigensolver           |
+| 2_fitting_the_proton_content | one-dim fit with high-energy physics data |
 
 
 
