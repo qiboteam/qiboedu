@@ -22,7 +22,7 @@ In the following table, we give a brief description of the `Qiboedu` contents.
 | **Entanglement tests**       |                                 |
 | 1_Bell-Wigner                | Simulate Bell-Wigner inequality |
 | 2_Bell64                     | Simulate Bell 1964 inequality   |
-| 2_CHSH                       | Simulate CHSH inequality        |
+| 3_CHSH                       | Simulate CHSH inequality        |
 | **Quantum noise**            |                                 |
 | 1_simulating_noise           | Simulating quantum noise        |
 | 2_error_mitigation           | Mitigating the noise            |
