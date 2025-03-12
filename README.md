@@ -2,6 +2,11 @@
 Collection of material for quantum computing educational activities using Qibo.
 Feel free to explore all the lectures provided by our special teacher: the Qibo mangoose!
 
+---
+
+Like all mongooses it builds its living environment as well-organized burrows arranged on several levels, always remaining alert to its surroundings, observing what is happening to be ready to react.
+That's why Qibo the mongoose is the perfect mascot for the Qibo framework, a full-stack project (from hardware to simulation) and with an eye on the latest frontier of research as community and research-driven 😄.
+
 ![qibo_teaching](https://github.com/user-attachments/assets/3a6e2b31-5a4b-4e0c-8f05-ce15d68ea971)
 
 
