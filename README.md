@@ -33,7 +33,7 @@ In the following table, we give a brief description of the `Qiboedu` contents.
 | 2_error_mitigation           | Mitigating the noise            |
 | **Quantum Machine Learning** |                                           |
 | 1_vqe                        | Variational Quantum Eigensolver           |
-| 2_fitting_the_proton_content | one-dim fit with high-energy physics data |
+| 2_fitting_the_proton_content | One-dimensional fit with high-energy physics data |
 
 
 
