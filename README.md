@@ -46,3 +46,9 @@ Given you have [poetry](https://python-poetry.org/docs/) installed:
 ```
 
 will install everything, shell into your local environment and start jupyter.
+
+## Help us to improve!
+
+- If you have any particular request, or want to understand more about a specific topic, open an issue! 🚨
+- If you have any qibo-based notebooks or interesting materials that you would like to share with the community, please feel free to share them with us! Open a Pull Request! 💻
+
