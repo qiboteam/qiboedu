@@ -24,7 +24,7 @@ In the following table, we give a brief description of the `Qiboedu` contents.
 | 2_deutsch_josza              | The Deutsch-Josza algorithm     |
 | 3_grover                     | The Grover search algorithm     |
 | 4_grover_details             | Opening the Grover black-box    |
-| **Entanglement tests**       |                                 |
+| **[Entanglement tests](notebooks/Bell_inequalities/)** |       |
 | 1_Bell-Wigner                | Simulate Bell-Wigner inequality |
 | 2_Bell64                     | Simulate Bell 1964 inequality   |
 | 3_CHSH                       | Simulate CHSH inequality        |
