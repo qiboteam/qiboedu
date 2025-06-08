@@ -19,8 +19,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.14"
-qibo = "^0.2.4"
-qibojit = "^0.1.2"
+qibo = "^0.2.16"
+qibojit = "^0.1.10"
 matplotlib = "^3.8.0"
 
 [build-system]
