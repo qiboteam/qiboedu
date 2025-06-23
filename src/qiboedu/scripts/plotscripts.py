@@ -283,3 +283,49 @@ def plot_bell_inequalities(experiment, Q_values, ac_steps, param_steps, param_la
         plt.savefig(f"{savetitle}.pdf", bbox_inches="tight")
 
     plt.show()
+
+def plot_loss(epochs, train_loss, val_loss):
+    """
+    Plots training and validation loss over epochs.
+
+    Parameters
+    ----------
+    epochs : list or array-like
+        List of epoch indices.
+    train_loss : list or array-like
+        Training loss values per epoch.
+    val_loss : list or array-like
+        Validation loss values per epoch.
+    """
+    fig = plt.figure(figsize=(5, 3.75), dpi=120)
+    plt.plot(epochs, train_loss, label='Train Loss', color='#C194D8', linestyle='--')
+    plt.plot(epochs, val_loss, label='Validation Loss', color='orange', linestyle='-')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.legend(fontsize=12)
+    fig.text(0.5, -0.08, "Fig. 1: training and validation loss over epochs.", fontsize=12, ha='center')
+    plt.grid(True)
+    plt.show()
+
+def plot_accuracies(epochs, train_acc, val_acc):
+    """
+    Plots training and validation accuracy over epochs.
+
+    Parameters
+    ----------
+    epochs : list or array-like
+        List of epoch indices.
+    train_acc : list or array-like
+        Training accuracy values per epoch.
+    val_acc : list or array-like
+        Validation accuracy values per epoch.
+    """
+    fig = plt.figure(figsize=(5, 3.75), dpi=120)
+    plt.plot(epochs, train_acc, label='Train Accuracy', color='#C194D8', linestyle='--')
+    plt.plot(epochs, val_acc, label='Validation Accuracy', color='orange', linestyle='-')
+    plt.xlabel('Epoch')
+    plt.ylabel('Accuracy')
+    plt.legend(fontsize=12)
+    fig.text(0.5, -0.08, "Fig. 2: training and validation accuracies over epochs.", fontsize=12, ha='center')
+    plt.grid(True)
+    plt.show()
