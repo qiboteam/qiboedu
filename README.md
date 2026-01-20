@@ -17,9 +17,9 @@ In the following table, we give a brief description of the `Qiboedu` contents.
 
 | Lecture                      | Topic                           |
 |------------------------------|---------------------------------|
-| **Introduction**             |                                 |
+| **[Introduction](notebooks/Introduction/)**   |                |
 | 1_qibo_basics                | First steps with Qibo           |
-| **Query algorithms**         |                                 |
+| **[Query algorithms](notebooks/Query_algorithms)**  |          |
 | 1_phase_kickback             | The phase kickback trick        |
 | 2_deutsch_josza              | The Deutsch-Josza algorithm     |
 | 3_grover                     | The Grover search algorithm     |
@@ -28,12 +28,15 @@ In the following table, we give a brief description of the `Qiboedu` contents.
 | 1_Bell-Wigner                | Simulate Bell-Wigner inequality |
 | 2_Bell64                     | Simulate Bell 1964 inequality   |
 | 3_CHSH                       | Simulate CHSH inequality        |
-| **Quantum noise**            |                                 |
+| **[Quantum noise](notebooks/Quantum_noise/)**    |             |
 | 1_simulating_noise           | Simulating quantum noise        |
 | 2_error_mitigation           | Mitigating the noise            |
-| **Quantum Machine Learning** |                                           |
-| 1_vqe                        | Variational Quantum Eigensolver           |
+| **[Quantum Machine Learning](notebooks/Quantum_machine_learning/)** |            |
+| 1_vqe                        | Variational Quantum Eigensolver                   |
 | 2_fitting_the_proton_content | One-dimensional fit with high-energy physics data |
+|**[Quantum control and calibration](notebooks/Control_and_calibration/)** |       |
+| 1_qibolab     | Controlling superconducting quantum devices              |
+| 2_qibocal     | Calibrating superconducting quantum devices              |
 
 
 
